@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UPSC Pro - Settings</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/DataManager.js"></script>
+    <script src="assets/js/core.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 h-screen flex flex-col overflow-hidden">
+
+    <header class="h-16 flex-none bg-white border-b border-slate-200 flex items-center justify-between px-4 z-30">
+        <button onclick="goHome()" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-50 text-slate-500 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <h1 class="text-lg font-bold text-slate-900">Settings</h1>
+        <div class="w-10"></div>
+    </header>
+
+    <main class="flex-1 overflow-y-auto p-4 pb-24 scroll-smooth space-y-6">
+
+        <section class="animate-fade-up">
+            <div class="glass-card p-6 rounded-3xl relative overflow-hidden bg-white">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-3xl -mr-8 -mt-8 pointer-events-none"></div>
+                
+                <div class="flex items-center gap-4 relative z-10 mb-6">
+                    <div class="w-16 h-16 rounded-full bg-slate-100 p-1 shadow-sm border border-slate-200 overflow-hidden cursor-pointer active:scale-95 transition-transform" onclick="openProfileModal()">
+                        <img src="assets/images/Omg.jpg" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-bold text-slate-900 leading-tight">Officer Aspirant</h2>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Level 4: Probationer</p>
+                        <span id="sync-status" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 text-[10px] font-bold border border-slate-200">
+                            <i class="fa-solid fa-cloud-slash"></i> Offline Mode
+                        </span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="triggerSync()" class="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-bold shadow-md hover:bg-blue-700 active:scale-95 transition-all">
+                        <i class="fa-solid fa-rotate"></i> Sync Now
+                    </button>
+                    <button onclick="logout()" class="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 text-sm font-bold hover:bg-slate-50 active:scale-95 transition-all">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="animate-fade-up" style="animation-delay: 0.1s;">
+            <h3 class="font-bold text-slate-800 mb-3 px-1 text-sm uppercase tracking-wide">Preferences</h3>
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                
+                <div class="p-4 flex items-center justify-between border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                        <span class="text-sm font-medium text-slate-700">Dark Mode</span>
+                    </div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="dark-toggle" class="sr-only peer" onchange="toggleDark(this)">
+                        <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    </label>
+                </div>
+
+                <div class="p-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+                            <i class="fa-solid fa-text-height"></i>
+                        </div>
+                        <span class="text-sm font-medium text-slate-700">Font Size</span>
+                    </div>
+                    <div class="flex items-center bg-slate-100 rounded-lg p-1">
+                        <button onclick="setFont('sm')" class="w-8 h-7 text-xs font-bold text-slate-500 hover:bg-white hover:shadow-sm rounded transition-all">A-</button>
+                        <button onclick="setFont('md')" class="w-8 h-7 text-sm font-bold text-blue-600 bg-white shadow-sm rounded transition-all">A</button>
+                        <button onclick="setFont('lg')" class="w-8 h-7 text-base font-bold text-slate-500 hover:bg-white hover:shadow-sm rounded transition-all">A+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="animate-fade-up" style="animation-delay: 0.2s;">
+            <h3 class="font-bold text-slate-800 mb-3 px-1 text-sm uppercase tracking-wide">Data & Storage</h3>
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <div class="p-4 border-b border-slate-100">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-sm font-bold text-slate-700">System Status</span>
+                        <span class="text-xs text-slate-400" id="file-count">Checking...</span>
+                    </div>
+                    <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-database text-blue-500"></i>
+                            <div>
+                                <p class="text-xs font-bold text-slate-800">Local Storage</p>
+                                <p class="text-[10px] text-slate-400">Active</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 divide-x divide-slate-100">
+                    <button onclick="exportData()" class="p-4 flex flex-col items-center gap-2 hover:bg-slate-50 transition-colors group">
+                        <i class="fa-solid fa-file-export text-blue-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-bold text-slate-600">Export Data</span>
+                    </button>
+                    <button onclick="clearHistory()" class="p-4 flex flex-col items-center gap-2 hover:bg-red-50 transition-colors group">
+                        <i class="fa-solid fa-trash-arrow-up text-red-500 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-bold text-red-600">Clear History</span>
+                    </button>
+                </div>
+                
+                <button onclick="factoryReset()" class="w-full p-4 text-center text-xs font-bold text-red-500 bg-red-50/50 hover:bg-red-50 transition-colors border-t border-slate-100">
+                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> Factory Reset App
+                </button>
+            </div>
+        </section>
+
+        <section class="text-center pb-6 animate-fade-up" style="animation-delay: 0.3s;">
+            <p class="text-xs text-slate-400 font-medium">UPSC Pro v1.2.0 • Build 2026</p>
+        </section>
+
+    </main>
+
+    <nav class="bg-white/95 backdrop-blur border-t border-slate-200 h-16 flex items-center justify-around fixed bottom-0 w-full z-40 pb-safe">
+        <button onclick="window.location.href='index.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform">
+            <i class="fa-solid fa-house text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Home</span>
+        </button>
+        <button onclick="window.location.href='quiz_selection.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform">
+            <i class="fa-solid fa-pen-nib text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Quiz</span>
+        </button>
+        <button onclick="window.location.href='stats.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform">
+            <i class="fa-solid fa-chart-pie text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Stats</span>
+        </button>
+        <button onclick="window.location.href='settings.html'" class="text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform">
+            <i class="fa-solid fa-gear text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Settings</span>
+        </button>
+    </nav>
+
+    <div id="profile-modal" class="fixed inset-0 z-[70] hidden flex items-center justify-center bg-black/90 backdrop-blur-sm p-4" onclick="closeProfileModal()">
+        <div class="relative max-w-lg w-full" onclick="event.stopPropagation()">
+            <button onclick="closeProfileModal()" class="absolute -top-12 right-0 text-white text-xl w-8 h-8 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/40">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="assets/images/Omg.jpg" class="w-full rounded-2xl shadow-2xl border border-white/20">
+            <p class="text-center text-white/70 text-xs mt-4 font-bold uppercase tracking-widest">Tap background to close</p>
+        </div>
+    </div>
+
+    <script src="assets/js/page-settings.js"></script>
+</body>
+</html>
