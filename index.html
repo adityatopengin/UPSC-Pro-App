@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UPSC Pro - Dashboard</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/DataManager.js"></script>
+    <script src="assets/js/subjects.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/ui-common.js"></script>
+</head>
+<body class="bg-slate-50 h-screen flex flex-col overflow-hidden text-slate-800 selection:bg-blue-100">
+
+    <header class="h-16 flex-none bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-30 px-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-100 p-0.5 shadow-sm border border-slate-200 overflow-hidden">
+                <img src="assets/images/Omg.jpg" alt="Profile" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h1 class="text-sm font-bold text-slate-900 leading-tight">Hello, <span id="user-name">Aspirant</span></h1>
+                <p class="text-[10px] text-slate-500 font-medium uppercase tracking-wide">Target: CSE 2026</p>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-2 px-3 py-1.5 bg-slate-50 rounded-full border border-slate-100">
+            <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+            <span class="text-[10px] font-bold text-slate-600">Active</span>
+        </div>
+    </header>
+
+    <main class="flex-1 overflow-y-auto p-4 pb-24 space-y-6 scroll-smooth">
+
+        <section class="animate-fade-up">
+            <div class="glass-card p-6 rounded-3xl relative overflow-hidden bg-white">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex space-x-6 border-b border-slate-200/60 mb-4">
+                        <button onclick="switchTab('gs1')" id="tab-gs1" class="pb-2 text-sm transition-colors font-bold text-slate-900 border-b-2 border-blue-600">GS Paper 1</button>
+                        <button onclick="switchTab('csat')" id="tab-csat" class="pb-2 text-sm transition-colors text-slate-500 hover:text-slate-700">CSAT Paper 2</button>
+                    </div>
+
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block border border-blue-200 bg-blue-50 text-blue-700">Phase 1: Foundation</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-2" id="syllabus-percent">0%</h2>
+                            <p class="text-xs text-slate-500 font-medium mt-1">Syllabus Covered</p>
+                        </div>
+                        <div class="bg-white/60 p-3 rounded-xl shadow-sm text-center min-w-[80px] backdrop-blur-sm border border-white/50">
+                            <div class="text-[10px] text-slate-400 font-bold uppercase">Attempts</div>
+                            <div class="text-2xl font-black text-slate-800" id="total-attempts">0</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="flex justify-between text-[10px] font-bold text-slate-400 mb-1.5 uppercase tracking-wide">
+                            <span>Overall Progress</span>
+                            <span id="progress-fraction">0 / 2000 Qs</span>
+                        </div>
+                        <div class="h-3 w-full bg-slate-100/80 rounded-full overflow-hidden border border-slate-200">
+                            <div id="main-progress-bar" class="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-500" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="animate-fade-up" style="animation-delay: 100ms;">
+            <h3 class="font-bold text-slate-800 mb-3 flex items-center gap-2 text-sm uppercase tracking-wide">
+                <i class="fa-solid fa-play-circle text-blue-600"></i> Continue Progress
+            </h3>
+            
+            <div id="subject-grid" class="grid grid-cols-2 gap-3 pb-4">
+                </div>
+        </section>
+
+    </main>
+
+    <nav class="bg-white/95 backdrop-blur border-t border-slate-200 h-16 flex items-center justify-around fixed bottom-0 w-full z-40 pb-safe">
+        <button onclick="window.location.href='index.html'" class="text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform">
+            <i class="fa-solid fa-house text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Home</span>
+        </button>
+        <button onclick="window.location.href='quiz_selection.html'" class="text-slate-400 flex flex-col items-center w-16 active:scale-95 transition-transform hover:text-blue-600">
+            <i class="fa-solid fa-pen-nib text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Quiz</span>
+        </button>
+        <button onclick="window.location.href='stats.html'" class="text-slate-400 flex flex-col items-center w-16 active:scale-95 transition-transform hover:text-blue-600">
+            <i class="fa-solid fa-chart-pie text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Stats</span>
+        </button>
+        <button onclick="window.location.href='settings.html'" class="text-slate-400 flex flex-col items-center w-16 active:scale-95 transition-transform hover:text-blue-600">
+            <i class="fa-solid fa-gear text-lg mb-1"></i>
+            <span class="text-[10px] font-bold">Settings</span>
+        </button>
+    </nav>
+
+    <script src="assets/js/page-dashboard.js"></script>
+</body>
+</html>
