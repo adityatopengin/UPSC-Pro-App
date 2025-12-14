@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UPSC Pro - Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/DataManager.js"></script>
+    <script src="assets/js/subjects.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/ui-common.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 h-screen flex flex-col overflow-hidden">
+
+    <header class="h-16 flex-none bg-white border-b border-slate-200 flex items-center justify-between px-4 z-30">
+        <button onclick="goHome()" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-50 text-slate-500 transition-colors"><i class="fa-solid fa-house"></i></button>
+        <h1 class="text-lg font-bold text-slate-900">Analysis</h1>
+        <button onclick="exportReport()" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-50 text-blue-600 transition-colors"><i class="fa-solid fa-download"></i></button>
+    </header>
+
+    <main class="flex-1 overflow-y-auto p-4 pb-24 scroll-smooth space-y-6">
+        <section class="animate-fade-up">
+            <div class="glass-card p-6 rounded-3xl text-center relative overflow-hidden bg-white">
+                <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Result</h2>
+                <div class="flex justify-center items-end gap-1 mb-2">
+                    <span class="text-5xl font-black text-slate-900" id="final-score">0</span>
+                    <span class="text-lg font-bold text-slate-400 mb-1">/ <span id="total-marks">20</span></span>
+                </div>
+                <div class="grid grid-cols-3 gap-4 border-t border-slate-100 pt-4 mt-6">
+                    <div><div class="text-2xl font-bold text-emerald-500" id="accuracy-text">0%</div><div class="text-[10px] font-bold text-slate-400 uppercase">Accuracy</div></div>
+                    <div><div class="text-2xl font-bold text-blue-500" id="total-time-taken">0s</div><div class="text-[10px] font-bold text-slate-400 uppercase">Time</div></div>
+                    <div><div class="text-2xl font-bold text-slate-700" id="avg-time">0s</div><div class="text-[10px] font-bold text-slate-400 uppercase">Avg / Q</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up" style="animation-delay: 0.1s;">
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="h-40 relative flex items-center justify-center"><canvas id="accuracyChart"></canvas><div class="absolute inset-0 flex items-center justify-center pointer-events-none"><div class="text-center"><span class="block text-lg font-black text-slate-800" id="center-total">10</span><span class="text-[8px] font-bold text-slate-400 uppercase">Qs</span></div></div></div>
+                <div class="mt-4 space-y-2 text-xs">
+                    <div class="flex justify-between font-bold text-emerald-700 bg-emerald-50 p-2 rounded"><span>Correct</span><span id="count-correct">0</span></div>
+                    <div class="flex justify-between font-bold text-red-700 bg-red-50 p-2 rounded"><span>Wrong</span><span id="count-wrong">0</span></div>
+                    <div class="flex justify-between font-bold text-slate-500 bg-slate-50 p-2 rounded"><span>Skipped</span><span id="count-skipped">0</span></div>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold text-slate-800 text-sm mb-4">Subject Breakdown</h3>
+                <div class="h-40 relative"><canvas id="subjectChart"></canvas></div>
+            </div>
+        </section>
+
+        <section class="animate-fade-up" style="animation-delay: 0.2s;">
+            <div class="flex justify-between items-center mb-4 px-1">
+                <h3 class="font-bold text-slate-800 text-lg">Detailed Review</h3>
+                <div class="flex gap-2">
+                    <button onclick="filterReview('all')" class="filter-btn active px-3 py-1 rounded-lg text-xs font-bold bg-slate-900 text-white">All</button>
+                    <button onclick="filterReview('wrong')" class="filter-btn px-3 py-1 rounded-lg text-xs font-bold bg-white text-slate-500 border border-slate-200">Wrong</button>
+                </div>
+            </div>
+            <div class="space-y-3" id="review-list"></div>
+        </section>
+    </main>
+
+    <nav class="bg-white/95 backdrop-blur border-t border-slate-200 h-16 flex items-center justify-around fixed bottom-0 w-full z-40 pb-safe">
+        <button onclick="window.location.href='index.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform"><i class="fa-solid fa-house text-lg mb-1"></i><span class="text-[10px] font-bold">Home</span></button>
+        <button onclick="window.location.href='quiz_selection.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform"><i class="fa-solid fa-pen-nib text-lg mb-1"></i><span class="text-[10px] font-bold">Quiz</span></button>
+        <button onclick="window.location.href='stats.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform"><i class="fa-solid fa-chart-pie text-lg mb-1"></i><span class="text-[10px] font-bold">Stats</span></button>
+        <button onclick="window.location.href='settings.html'" class="text-slate-400 hover:text-blue-600 flex flex-col items-center w-16 active:scale-95 transition-transform"><i class="fa-solid fa-gear text-lg mb-1"></i><span class="text-[10px] font-bold">Settings</span></button>
+    </nav>
+
+    <div id="q-modal" class="fixed inset-0 z-50 hidden flex items-end sm:items-center justify-center pointer-events-none">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity opacity-0 pointer-events-auto" id="modal-bg" onclick="closeModal('q-modal')"></div>
+        <div class="bg-white w-full max-w-2xl rounded-t-3xl sm:rounded-3xl shadow-2xl transform translate-y-full transition-transform duration-300 pointer-events-auto flex flex-col max-h-[90vh]" id="modal-content">
+            <div class="p-6 border-b border-slate-100 flex justify-between items-center">
+                <div><span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded uppercase" id="m-subject">Subject</span></div>
+                <button onclick="closeModal('q-modal')" class="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-200"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-6">
+                <div id="m-img-container" class="hidden"><img id="m-image" src="" class="w-full h-48 object-cover rounded-xl border border-slate-200"></div>
+                <p class="text-lg font-medium text-slate-900 font-serif" id="m-text"></p>
+                <div class="space-y-3" id="m-options"></div>
+                <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-5">
+                    <h4 class="text-xs font-bold text-emerald-700 uppercase mb-2"><i class="fa-solid fa-lightbulb mr-1"></i> Explanation</h4>
+                    <p class="text-sm text-emerald-900 opacity-90 leading-relaxed" id="m-exp"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/page-analysis.js"></script>
+</body>
+</html>
+
