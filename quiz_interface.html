@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UPSC Pro - Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/DataManager.js"></script>
+    <script src="assets/js/subjects.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/ui-common.js"></script>
+</head>
+<body class="h-screen flex flex-col text-slate-800 overflow-hidden bg-white">
+
+    <header class="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-4 z-30 flex-none shadow-sm">
+        <div class="flex items-center gap-3">
+            <button onclick="exitQuiz()" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-50 text-slate-400 transition-colors">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div>
+                <h1 class="text-[10px] font-extrabold text-blue-600 uppercase tracking-widest" id="header-subject">Loading...</h1>
+                <div class="flex items-center gap-1.5" id="timer-box">
+                    <i class="fa-regular fa-clock text-slate-400 text-xs"></i>
+                    <span class="font-mono font-bold text-lg leading-none text-slate-700" id="timer-display">00:00</span>
+                </div>
+            </div>
+        </div>
+        <button onclick="submitQuiz()" class="bg-slate-900 hover:bg-black text-white px-4 py-2 rounded-lg text-xs font-bold transition-transform active:scale-95 shadow-md flex items-center gap-2">
+            <span>Submit</span> <i class="fa-solid fa-check"></i>
+        </button>
+    </header>
+
+    <div class="h-1 w-full bg-slate-100 flex-none">
+        <div id="progress-bar" class="h-full bg-blue-600 transition-all duration-300 ease-out" style="width: 0%"></div>
+    </div>
+
+    <main class="flex-1 overflow-hidden relative" id="quiz-viewport">
+        <div id="passage-container" class="hidden h-2/5 overflow-y-auto border-b border-slate-200 bg-slate-50 p-6">
+            <div class="sticky top-0 bg-slate-50/95 backdrop-blur py-2 mb-2 border-b border-slate-200 flex items-center gap-2 z-10">
+                <i class="fa-solid fa-book-open text-blue-500"></i>
+                <span class="text-xs font-bold text-slate-500 uppercase">Read Passage</span>
+            </div>
+            <p class="text-base text-slate-700 leading-relaxed font-serif" id="passage-text"></p>
+        </div>
+
+        <div id="question-container" class="h-full overflow-y-auto p-6 pb-32 scroll-smooth">
+            <div class="mb-6">
+                <div class="flex justify-between items-start mb-3">
+                    <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded border border-slate-200">
+                        Q <span id="q-num">1</span>
+                    </span>
+                    <button onclick="toggleBookmark()" id="btn-bookmark" class="text-slate-300 hover:text-amber-400 transition-colors p-1">
+                        <i class="fa-regular fa-star text-xl"></i>
+                    </button>
+                </div>
+                
+                <div id="img-slot" class="hidden mb-4 rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+                    <img id="q-image" src="" class="w-full h-auto max-h-60 object-contain mx-auto cursor-zoom-in" onclick="openImageZoom(this.src)">
+                </div>
+
+                <p class="text-lg md:text-xl font-medium text-slate-900 leading-relaxed" id="q-text">...</p>
+            </div>
+
+            <div class="space-y-3 mb-8" id="options-list"></div>
+
+            <div id="explanation-box" class="hidden mt-8 bg-emerald-50 border border-emerald-100 p-5 rounded-xl relative overflow-hidden animate-fade-up">
+                <div class="absolute top-0 left-0 w-1 h-full bg-emerald-400"></div>
+                <h4 class="text-xs font-bold text-emerald-700 uppercase mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb"></i> Explanation</h4>
+                <p class="text-sm text-emerald-900 leading-relaxed opacity-90" id="exp-text"></p>
+            </div>
+        </div>
+    </main>
+
+    <div class="fixed bottom-0 w-full bg-white/90 backdrop-blur border-t border-slate-200 p-3 z-40 shadow-[0_-4px_10px_-1px_rgba(0,0,0,0.05)] pb-safe">
+        <div class="max-w-3xl mx-auto flex items-center justify-between gap-3">
+            <button onclick="toggleMap()" class="flex flex-col items-center justify-center w-12 h-12 rounded-xl text-slate-500 hover:bg-slate-100 hover:text-blue-600 transition-colors">
+                <i class="fa-solid fa-grid-2 text-lg mb-0.5"></i>
+                <span class="text-[9px] font-bold uppercase">Map</span>
+            </button>
+            <div class="h-8 w-px bg-slate-200 mx-1"></div>
+            <button onclick="prevQ()" id="btn-prev" class="w-12 h-12 rounded-full border-2 border-slate-200 text-slate-400 flex items-center justify-center hover:border-slate-300 hover:text-slate-600 disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95 bg-white">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="nextQ()" id="btn-next" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white h-12 rounded-full font-bold text-sm shadow-lg shadow-blue-200 transition-all active:scale-95 flex items-center justify-center gap-2">
+                <span>Next</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="map-modal" class="fixed inset-0 z-50 hidden bg-black/40 backdrop-blur-sm transition-opacity" onclick="toggleMap()">
+        <div class="absolute bottom-0 w-full bg-white rounded-t-3xl p-6 pb-24 shadow-2xl transform transition-transform" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-6">
+                <div><h3 class="text-lg font-bold text-slate-900">Question Map</h3><p class="text-xs text-slate-500">Tap to jump</p></div>
+                <button onclick="toggleMap()" class="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-200"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="grid grid-cols-5 gap-3 max-h-60 overflow-y-auto" id="map-grid"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/page-quiz.js"></script>
+</body>
+</html>
+
