@@ -1,0 +1,1260 @@
+{
+  "subject": "Indian Polity",
+  "totalQuestions": 100,
+  "difficulty": "mixed",
+  "source": "UPSC CSE Prelims (2013-2024)",
+  "lastUpdated": "2025-01-15",
+  "questions": [
+    {
+      "id": 1001,
+      "year": 2023,
+      "type": "standard",
+      "text": "Which Article of the Indian Constitution deals with the abolition of untouchability?",
+      "options": ["Article 15", "Article 17", "Article 21", "Article 25"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Article 17 of the Indian Constitution abolishes untouchability and prohibits its practice in any form."
+    },
+    {
+      "id": 1002,
+      "year": 2022,
+      "type": "standard",
+      "text": "The Right to Constitutional Remedies is available under which Article?",
+      "options": ["Article 30", "Article 31", "Article 32", "Article 33"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "Article 32 provides the Right to Constitutional Remedies. It empowers the Supreme Court to issue writs."
+    },
+    {
+      "id": 1003,
+      "year": 2021,
+      "type": "standard",
+      "text": "Which of the following Fundamental Rights can be suspended during a national emergency?",
+      "options": ["Right to Equality", "Right to Freedom of Religion", "Right to Constitutional Remedies", "All of the above"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Article 33 allows suspension of Right to Constitutional Remedies during national emergency."
+    },
+    {
+      "id": 1004,
+      "year": 2020,
+      "type": "standard",
+      "text": "The concept of 'Welfare State' is reflected in which part of the Indian Constitution?",
+      "options": ["Fundamental Rights", "Directive Principles of State Policy", "Union and State Lists", "Schedules"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Directive Principles of State Policy (Part IV) embody the concept of a Welfare State."
+    },
+    {
+      "id": 1005,
+      "year": 2019,
+      "type": "standard",
+      "text": "Which Article provides for the establishment of the National Human Rights Commission (NHRC)?",
+      "options": ["Article 126", "Article 338", "Article 338-A", "No specific article; it's established by Parliament's law"],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "The NHRC is not specifically provided for in the Constitution. It was established under the Protection of Human Rights Act, 1993."
+    },
+    {
+      "id": 1006,
+      "year": 2024,
+      "type": "standard",
+      "text": "The concept of 'Judicial Review' in the Indian Constitution is based on:",
+      "options": ["Express provision in the Constitution", "Implied powers derived from the structure and spirit of the Constitution", "Article 13 of the Constitution", "Common law tradition inherited from British system"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Judicial Review is primarily based on Article 13, which declares that laws inconsistent with fundamental rights are void."
+    },
+    {
+      "id": 1007,
+      "year": 2018,
+      "type": "standard",
+      "text": "Which of the following is NOT a Fundamental Right under the Indian Constitution?",
+      "options": ["Right to Freedom of Speech and Expression", "Right to Education", "Right to Property", "Right to Equality"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "Right to Property was removed from the list of Fundamental Rights by the 44th Amendment Act, 1978."
+    },
+    {
+      "id": 1008,
+      "year": 2017,
+      "type": "standard",
+      "text": "The preamble of the Indian Constitution declares India as a:",
+      "options": ["Democratic Republic", "Sovereign Democratic Republic", "Sovereign Secular Democratic Republic", "Sovereign Socialist Secular Democratic Republic"],
+      "correct": 3,
+      "difficulty": "easy",
+      "explanation": "The Preamble was amended by the 42nd Amendment Act, 1976 to add the words 'Socialist' and 'Secular'."
+    },
+    {
+      "id": 1009,
+      "year": 2016,
+      "type": "standard",
+      "text": "Who can remove the President of India from office?",
+      "options": ["Prime Minister and Cabinet", "Both Houses of Parliament by impeachment", "Chief Justice of India", "Lok Sabha only"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The President can be removed through impeachment as per Article 61."
+    },
+    {
+      "id": 1010,
+      "year": 2015,
+      "type": "standard",
+      "text": "The term of office of a Judge of the Supreme Court is:",
+      "options": ["5 years", "6 years", "Till age 62 years", "Till age 65 years"],
+      "correct": 3,
+      "difficulty": "easy",
+      "explanation": "As per Article 124(2), Supreme Court judges hold office until they attain the age of 65 years."
+    },
+    {
+      "id": 1011,
+      "year": 2023,
+      "type": "standard",
+      "text": "Which of the following is a feature of the Lok Sabha?",
+      "options": ["Members are nominated by the President", "It has a fixed tenure of 5 years", "Members are not bound by party whip on all matters", "All of the above"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Lok Sabha has a maximum tenure of 5 years but can be dissolved earlier."
+    },
+    {
+      "id": 1012,
+      "year": 2022,
+      "type": "standard",
+      "text": "The Rajya Sabha can reject a Money Bill:",
+      "options": ["At any stage", "After recommending amendments", "The Rajya Sabha cannot reject a Money Bill", "Only with the President's approval"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "As per Article 109(3), the Rajya Sabha can only recommend amendments to a Money Bill. It cannot reject it."
+    },
+    {
+      "id": 1013,
+      "year": 2021,
+      "type": "standard",
+      "text": "Who among the following appoints the Comptroller and Auditor General of India?",
+      "options": ["Prime Minister", "President", "Chief Justice of India", "Lok Sabha Speaker"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "The Comptroller and Auditor General (CAG) is appointed by the President of India on the recommendation of the Prime Minister."
+    },
+    {
+      "id": 1014,
+      "year": 2020,
+      "type": "standard",
+      "text": "The concept of 'Collective Responsibility' of the Cabinet means:",
+      "options": ["Each minister is individually responsible for their actions", "The Cabinet collectively takes responsibility for all government actions", "Only the PM is responsible for Cabinet actions", "Individual ministers are not answerable to Parliament"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Collective Responsibility (Article 75) means the entire Cabinet is collectively responsible to the Lok Sabha."
+    },
+    {
+      "id": 1015,
+      "year": 2019,
+      "type": "standard",
+      "text": "Under which Article can the President dissolve the Lok Sabha?",
+      "options": ["Article 85", "Article 92", "Article 100", "Article 143"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "Article 85(2)(b) empowers the President to dissolve the Lok Sabha."
+    },
+    {
+      "id": 1016,
+      "year": 2018,
+      "type": "standard",
+      "text": "Which of the following is NOT a power of the President?",
+      "options": ["Appointment of Judges", "Appointment of Cabinet Ministers", "Dissolution of Parliament", "Declaring martial law"],
+      "correct": 3,
+      "difficulty": "hard",
+      "explanation": "The President cannot declare martial law. Martial law is not recognized under the Indian Constitution."
+    },
+    {
+      "id": 1017,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following statements about the Preamble is correct?",
+      "options": ["It is a legally binding part of the Constitution", "It is just an introduction and not legally binding", "It can be amended without following Article 368", "It was not part of the original Constitution"],
+      "correct": 0,
+      "difficulty": "hard",
+      "explanation": "The Preamble is a binding part of the Constitution and can be invoked in courts (Kesavananda Bharati case)."
+    },
+    {
+      "id": 1018,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Doctrine of Colorable Legislation' prohibits:",
+      "options": ["States from creating new laws", "The Legislature from doing indirectly what it cannot do directly", "Judges from interpreting laws", "The Cabinet from advising the President"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "The Doctrine of Colorable Legislation prevents legislatures from circumventing constitutional limitations by using indirect methods."
+    },
+    {
+      "id": 1019,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which Article ensures the right to move the Supreme Court for enforcement of Fundamental Rights?",
+      "options": ["Article 13", "Article 32", "Article 226", "Article 139"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Article 32 provides the Right to Constitutional Remedies and allows any person to move the Supreme Court directly."
+    },
+    {
+      "id": 1020,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Advisory Jurisdiction' of the Supreme Court is provided under:",
+      "options": ["Article 132", "Article 142", "Article 143", "Article 144"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Article 143 gives the President the power to refer questions of constitutional law or public importance to the Supreme Court."
+    },
+    {
+      "id": 1021,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following writs is used to prevent a person from acting in an office to which they have not been legally appointed?",
+      "options": ["Habeas Corpus", "Mandamus", "Quo Warranto", "Certiorari"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Quo Warranto means 'under what authority' and is used to challenge the authority of a person to hold a public office."
+    },
+    {
+      "id": 1022,
+      "year": 2019,
+      "type": "standard",
+      "text": "The concept of 'Equality before law' is enshrined in:",
+      "options": ["Article 14", "Article 15", "Article 16", "Article 17"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "Article 14 guarantees equality before law and equal protection of law to all persons."
+    },
+    {
+      "id": 1023,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is a feature of the Indian President's power to declare an emergency?",
+      "options": ["The President can declare an emergency without any conditions", "The President must be satisfied that the security is threatened and shall act on PM's advice", "Parliament cannot revoke an emergency once declared", "Emergency suspends all Fundamental Rights immediately"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Under Article 352, the President can declare a national emergency on the advice of the PM and Cabinet."
+    },
+    {
+      "id": 1024,
+      "year": 2023,
+      "type": "standard",
+      "text": "The President's power to grant pardons is provided under:",
+      "options": ["Article 72", "Article 76", "Article 80", "Article 88"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Article 72 gives the President the power to grant pardons, reprieves, respites, and remissions of punishment."
+    },
+    {
+      "id": 1025,
+      "year": 2022,
+      "type": "standard",
+      "text": "How many members can the President nominate to the Lok Sabha?",
+      "options": ["2", "5", "10", "15"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "Under Article 331, the President can nominate 2 members from the Anglo-Indian community."
+    },
+    {
+      "id": 1026,
+      "year": 2021,
+      "type": "standard",
+      "text": "The concept of 'Separation of Powers' in the Indian Constitution means:",
+      "options": ["Complete separation of Executive, Legislature, and Judiciary", "Clear demarcation of powers with some overlaps for checks and balances", "The Executive is superior to the Legislature", "The Judiciary is subordinate to the Legislature"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "India follows a modified separation of powers with deliberate overlaps for creating checks and balances."
+    },
+    {
+      "id": 1027,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which committee recommends the appointment of judges to the Supreme Court?",
+      "options": ["Chief Justice leads collegium system", "Law Commission", "Attorney General's office", "Prime Minister's office"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "The Supreme Court Collegium system (CJI + 4 senior judges) recommends appointments."
+    },
+    {
+      "id": 1028,
+      "year": 2019,
+      "type": "standard",
+      "text": "The Constituent Assembly was chaired by:",
+      "options": ["Dr. Rajendra Prasad", "Pandit Jawaharlal Nehru", "Dr. B.R. Ambedkar", "Sardar Vallabhbhai Patel"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "Dr. Rajendra Prasad was the Chairman of the Constituent Assembly."
+    },
+    {
+      "id": 1029,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which Article provides for the abolition of titles except military and academic honors?",
+      "options": ["Article 16", "Article 18", "Article 20", "Article 22"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Article 18 abolishes titles to create equality among citizens."
+    },
+    {
+      "id": 1030,
+      "year": 2023,
+      "type": "standard",
+      "text": "The term 'DPSP' refers to:",
+      "options": ["Democratic People's Socialist Party", "Directive Principles of State Policy", "Defense and Public Security Protocol", "District Police Services and Personnel"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "DPSP stands for Directive Principles of State Policy, found in Part IV (Articles 36-51)."
+    },
+    {
+      "id": 1031,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following is a Joint Sitting of both Houses of Parliament?",
+      "options": ["Budget Session", "Resolving deadlock on a Bill", "Question Hour", "Presidential Address"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Article 110 provides for a joint sitting to resolve deadlocks between Houses."
+    },
+    {
+      "id": 1032,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Doctrine of Locus Standi' means:",
+      "options": ["A person's legal right to bring a case to court", "The location where a case is filed", "The statute of limitations for filing a case", "The procedure for appealing a case"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Locus Standi refers to a person's legal right to bring a case before the court."
+    },
+    {
+      "id": 1033,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which committee is responsible for redressal of grievances of the public?",
+      "options": ["Public Accounts Committee", "Estimates Committee", "Public Grievance Committee", "All of the above"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "The Public Grievances Committee examines public complaints against government action."
+    },
+    {
+      "id": 1034,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Sunset Clause' in a statute means:",
+      "options": ["A clause that provides automatic expiration of the law", "A clause that becomes effective at sunset", "A clause that prevents sunset-hour crimes", "A ceremonial clause in the Constitution"],
+      "correct": 0,
+      "difficulty": "hard",
+      "explanation": "A Sunset Clause provides for the automatic expiration of a law on a specified date."
+    },
+    {
+      "id": 1035,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is NOT a power of the Rajya Sabha?",
+      "options": ["Initiating impeachment of the President", "Passing Money Bills", "Removal of judges", "Creating new states"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Rajya Sabha cannot originate or pass Money Bills independently."
+    },
+    {
+      "id": 1036,
+      "year": 2023,
+      "type": "standard",
+      "text": "The power to interpret the Constitution vests with:",
+      "options": ["Parliament", "The President", "The Supreme Court", "The Chief Justice"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Supreme Court has the ultimate authority to interpret the Constitution."
+    },
+    {
+      "id": 1037,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following statements about Fundamental Duties is correct?",
+      "options": ["They are as important as Fundamental Rights", "They are legally enforceable like Rights", "They are moral obligations without direct legal enforcement", "They cannot be modified by Parliament"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Fundamental Duties are moral and patriotic obligations, not directly enforceable in courts."
+    },
+    {
+      "id": 1038,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Threshold Test' in the context of Indian Constitution refers to:",
+      "options": ["Minimum percentage of votes for party recognition", "Minimum number of members required for a valid session", "Criteria for testing a law's constitutionality", "Minimum age for holding public office"],
+      "correct": 2,
+      "difficulty": "hard",
+      "explanation": "The Threshold Test is used by courts to determine if a law violates constitutional provisions."
+    },
+    {
+      "id": 1039,
+      "year": 2020,
+      "type": "standard",
+      "text": "How many times has the Indian Constitution been amended?",
+      "options": ["105 times", "108 times", "120 times", "150 times"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "As of January 2025, the Indian Constitution has been amended 108 times."
+    },
+    {
+      "id": 1040,
+      "year": 2019,
+      "type": "standard",
+      "text": "Which Amendment introduced the concept of Fundamental Duties?",
+      "options": ["40th Amendment", "42nd Amendment", "44th Amendment", "52nd Amendment"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "The 42nd Amendment (1976) introduced Part IV-A containing Fundamental Duties."
+    },
+    {
+      "id": 1041,
+      "year": 2024,
+      "type": "standard",
+      "text": "The 'Basic Structure' doctrine was established in which landmark case?",
+      "options": ["Shankari Prasad v. Union of India", "Kesavananda Bharati v. State of Kerala", "Golaknath v. State of Punjab", "Minerva Mills v. Union of India"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "The Kesavananda Bharati case (1973) established the Basic Structure Doctrine."
+    },
+    {
+      "id": 1042,
+      "year": 2023,
+      "type": "standard",
+      "text": "Which of the following is recognized as the 'basic structure' of the Constitution?",
+      "options": ["Supremacy of the Constitution", "Republican democratic form of government", "Judicial review", "All of the above"],
+      "correct": 3,
+      "difficulty": "hard",
+      "explanation": "The Basic Structure includes supremacy, democracy, republicanism, secularism, etc."
+    },
+    {
+      "id": 1043,
+      "year": 2022,
+      "type": "standard",
+      "text": "The concept of 'Federalism' in the Indian Constitution is reflected in:",
+      "options": ["The existence of Union and State governments", "Division of powers between Union and States", "Supremacy of the Union", "Options 1 and 2 are correct"],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "Indian federalism has two main elements: Division of powers and existence of distinct Union/State governments."
+    },
+    {
+      "id": 1044,
+      "year": 2021,
+      "type": "standard",
+      "text": "Which Article deals with the 'Union and its Territory'?",
+      "options": ["Article 1", "Article 2", "Article 3", "Article 4"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "Article 1 defines India as a 'Union of States'."
+    },
+    {
+      "id": 1045,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following can be the basis for creating a new state?",
+      "options": ["Only linguistic lines", "Only geographical lines", "Only cultural lines", "Linguistic, geographical, or cultural considerations (at Parliament's discretion)"],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "Parliament has discretion in deciding criteria for new states (Article 3)."
+    },
+    {
+      "id": 1046,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Residuary Powers' vest with:",
+      "options": ["Union", "States", "Both equally", "Depends on the subject matter"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Article 248 grants residuary powers (over subjects not enumerated in any list) to the Union."
+    },
+    {
+      "id": 1047,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following subjects falls under the 'Concurrent List'?",
+      "options": ["Taxation", "Education", "Elections", "Defense"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Education is in the Concurrent List (List III)."
+    },
+    {
+      "id": 1048,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Ashoka Chakra' in the Indian flag represents:",
+      "options": ["The wheel of law (Dharmachakra)", "The sun", "The Buddhist symbol of enlightenment", "The historical wheel of Emperor Ashoka"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "The Ashoka Chakra represents the Dharmachakra (wheel of law), signifying perpetual motion and justice."
+    },
+    {
+      "id": 1049,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following is a characteristic feature of a parliamentary democracy?",
+      "options": ["Head of State is separate from Head of Government", "Executive is responsible to the Legislature", "Both of the above", "Neither of the above"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Parliamentary democracy features both a separate Head of State and an Executive responsible to the Legislature."
+    },
+    {
+      "id": 1050,
+      "year": 2021,
+      "type": "standard",
+      "text": "The Indian Constitution can be amended by which procedure?",
+      "options": ["Simple majority in Parliament", "2/3 majority in both Houses", "2/3 majority in both Houses + Ratification by half the state legislatures (for specific provisions)", "Options 2 and 3 depending on the amendment"],
+      "correct": 3,
+      "difficulty": "hard",
+      "explanation": "Article 368 provides for amendment, with stricter requirements for provisions affecting federal structure."
+    },
+    {
+      "id": 1051,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is the correct sequence of the removal of a judge from the Supreme Court?",
+      "options": [
+        "Impeachment motion → Investigation committee → Report → Vote in both Houses",
+        "Investigation committee → Impeachment motion → Report → Vote",
+        "Impeachment motion → Report → Investigation → Vote in both Houses",
+        "Vote in both Houses → Investigation → Report → Impeachment"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "explanation": "The correct sequence for removing a judge involves a motion signed by MPs, investigation by a committee, a report, and then voting in both Houses."
+    },
+    {
+      "id": 1052,
+      "year": 2023,
+      "type": "standard",
+      "text": "The concept of 'Statutory Interpretation' in Indian law means:",
+      "options": [
+        "Courts cannot interpret statutes",
+        "Courts interpret statutes to give effect to Parliamentary intent",
+        "Statutes are always literal without interpretation",
+        "Only Parliament can interpret its own statutes"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Statutory Interpretation is the process by which courts determine the meaning and application of statutes to effectuate Parliamentary intent."
+    },
+    {
+      "id": 1053,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following amendments is related to the 'Right to Education'?",
+      "options": [
+        "82nd Amendment",
+        "86th Amendment",
+        "88th Amendment",
+        "92nd Amendment"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "The 86th Amendment (2002) made Right to Education a Fundamental Right under Article 21-A."
+    },
+    {
+      "id": 1054,
+      "year": 2021,
+      "type": "standard",
+      "text": "The concept of 'Preventive Detention' is allowed under which article?",
+      "options": [
+        "Article 21",
+        "Article 22",
+        "Article 32",
+        "Article 35"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Article 22 provides safeguards against preventive detention, such as informing grounds and advisory board review."
+    },
+    {
+      "id": 1055,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following is a 'Non-Justiciable Right'?",
+      "options": [
+        "Right to Equality",
+        "Right to Freedom of Speech",
+        "Right to work (as per DPSP)",
+        "Right to Constitutional Remedies"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Rights under DPSP (like Right to work, Article 41) are non-justiciable and cannot be directly enforced in courts."
+    },
+    {
+      "id": 1056,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Rule of Law' concept in the Indian Constitution means:",
+      "options": [
+        "All laws must be followed without question",
+        "No person is above law; everyone is equal before law",
+        "Only judges can make laws",
+        "Executive has absolute power"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Rule of Law implies that no person is above the law and all are subject to it (Articles 14-16)."
+    },
+    {
+      "id": 1057,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following can amend the Constitution through a special procedure?",
+      "options": [
+        "Only Parliament",
+        "Parliament with state ratification for certain provisions",
+        "Parliament with President's consent",
+        "Parliament with Supreme Court approval"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Article 368 requires ratification from half the states for amendments affecting federal structure."
+    },
+    {
+      "id": 1058,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Doctrine of Pleasure' in Indian context means:",
+      "options": [
+        "The pleasure of the President",
+        "The pleasure of common people",
+        "A government servant holds office at the pleasure of the President",
+        "Options 1 and 3"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "Doctrine of Pleasure generally means civil servants hold office at the President's pleasure, subject to constitutional safeguards."
+    },
+    {
+      "id": 1059,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which committee is responsible for formulating rules for Parliamentary procedures?",
+      "options": [
+        "Standing Committee",
+        "Committee on Rules of Procedure and Conduct of Business",
+        "Public Accounts Committee",
+        "Estimates Committee"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Committee on Rules of Procedure and Conduct of Business formulates rules for the House."
+    },
+    {
+      "id": 1060,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Doctrine of Legitimate Expectations' in Administrative Law means:",
+      "options": [
+        "Citizens can expect anything from government",
+        "Government must fulfill all expectations of citizens",
+        "Government decisions must be consistent with reasonable expectations of affected persons",
+        "Only Cabinet members have legitimate expectations"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "explanation": "Legitimate Expectations Doctrine protects citizens when government promises create reasonable expectations."
+    },
+    {
+      "id": 1061,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following is the correct definition of 'Delegated Legislation'?",
+      "options": [
+        "Legislation passed by delegates",
+        "Legislation made by persons to whom Parliament has delegated power",
+        "Legislation passed by state legislatures",
+        "Legislation made by foreign bodies"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Delegated Legislation refers to laws/rules made by the Executive under powers granted by Parliament."
+    },
+    {
+      "id": 1062,
+      "year": 2019,
+      "type": "standard",
+      "text": "The concept of 'Sub Judice' in parliamentary procedures means:",
+      "options": [
+        "A matter can be discussed in Parliament freely",
+        "A matter under judicial consideration cannot be discussed in Parliament",
+        "Parliamentary debates are always recorded",
+        "Judges can participate in parliamentary discussions"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Sub Judice rule prevents Parliament from discussing matters currently under judicial consideration."
+    },
+    {
+      "id": 1063,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is NOT a power of the Speaker of Lok Sabha?",
+      "options": [
+        "Deciding admissibility of questions",
+        "Maintaining order in the House",
+        "Casting vote in case of tie",
+        "Making laws on behalf of Parliament"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "explanation": "The Speaker presides over the House but cannot make laws; that is the function of Parliament."
+    },
+    {
+      "id": 1064,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Anti-Defection Law' was introduced through which amendment?",
+      "options": [
+        "40th Amendment",
+        "42nd Amendment",
+        "52nd Amendment",
+        "61st Amendment"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The 52nd Amendment (1985) added the Tenth Schedule containing the Anti-Defection Law."
+    },
+    {
+      "id": 1065,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following constitutes 'Judicial Review' in the Indian system?",
+      "options": [
+        "Review of judicial orders by higher courts",
+        "Review of executive and legislative actions for constitutionality",
+        "Review of administrative decisions by administrative authorities",
+        "Review of court judgments by legal experts"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Judicial Review allows courts to examine if legislative/executive actions violate the Constitution."
+    },
+    {
+      "id": 1066,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Pipe Line Doctrine' in Indian constitutional law refers to:",
+      "options": [
+        "Rights under old laws continue even after new laws are passed",
+        "Cases pending in court before a constitutional amendment continue under old law",
+        "Government pipelines cannot be interfered with",
+        "Only administrative procedures regarding pipelines"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "The Pipeline Doctrine relates to pending cases continuing under old laws post-amendment (with exceptions)."
+    },
+    {
+      "id": 1067,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following is a characteristic of a 'Money Bill'?",
+      "options": [
+        "It relates only to taxation",
+        "It deals with appropriation of revenues and financial matters",
+        "It always requires President's assent",
+        "All of the above are characteristics"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Money Bills (Article 110) deal with taxation, expenditure, and government finances, certified by the Speaker."
+    },
+    {
+      "id": 1068,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Doctrine of Proportionality' requires that:",
+      "options": [
+        "All laws must be proportionate to each other",
+        "Restriction on rights must be proportionate to the purpose",
+        "Proportional representation must be maintained in all elections",
+        "Government expenditure must be proportionate to revenue"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Proportionality requires restrictions on rights to be proportionate to the legitimate state objective."
+    },
+    {
+      "id": 1069,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following can challenge a constitutional amendment in court?",
+      "options": [
+        "Any citizen can challenge",
+        "Only Parliament can challenge",
+        "Only the President can challenge",
+        "No one can challenge a constitutional amendment"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "explanation": "Citizens can challenge amendments if they violate the Basic Structure (Kesavananda Bharati case)."
+    },
+    {
+      "id": 1070,
+      "year": 2023,
+      "type": "standard",
+      "text": "The concept of 'Cabinet Government' means:",
+      "options": [
+        "The President's advisory body",
+        "The collective executive responsible to the Legislature",
+        "A body that makes recommendations to the PM",
+        "An administrative committee appointed by judges"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Cabinet Government implies the executive is collectively responsible to the Legislature."
+    },
+    {
+      "id": 1071,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following amendments abolished the upper houses of state legislatures?",
+      "options": [
+        "44th Amendment",
+        "52nd Amendment",
+        "65th Amendment",
+        "68th Amendment"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "The 65th Amendment authorized abolition of Legislative Councils in states."
+    },
+    {
+      "id": 1072,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Emergency Provisions' in the Constitution can be invoked in case of:",
+      "options": [
+        "National emergency (war/external aggression/armed rebellion)",
+        "State emergency (President's rule)",
+        "Financial emergency",
+        "All of the above"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "Constitution provides for National (Art 352), State (Art 356), and Financial (Art 360) emergencies."
+    },
+    {
+      "id": 1073,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which article defines the executive power of the President?",
+      "options": [
+        "Article 53",
+        "Article 72",
+        "Article 85",
+        "Article 110"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "Article 53 vests the executive power of the Union in the President."
+    },
+    {
+      "id": 1074,
+      "year": 2019,
+      "type": "standard",
+      "text": "The concept of 'Concurrent Jurisdiction' means:",
+      "options": [
+        "Only one court can hear a case",
+        "Multiple courts can hear the same case",
+        "Both civil and criminal courts can hear a matter",
+        "Courts can hear matters concurrently with Parliament"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Concurrent Jurisdiction means different courts (e.g., civil and criminal) can deal with relevant aspects of a matter."
+    },
+    {
+      "id": 1075,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is true about 'Writs' in the Indian Constitution?",
+      "options": [
+        "Only the Supreme Court can issue writs",
+        "Only the High Court can issue writs",
+        "Both Supreme Court and High Courts can issue writs",
+        "Writs can only be issued by the President"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "Both SC (Art 32) and High Courts (Art 226) can issue writs."
+    },
+    {
+      "id": 1076,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Collegium System' for judicial appointments was established after which case?",
+      "options": [
+        "First Judges Case (1977)",
+        "Second Judges Case (1993)",
+        "Third Judges Case (1998)",
+        "Judges Transfer Case (2015)"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "The Second Judges Case (1993) established the Collegium System for judicial independence."
+    },
+    {
+      "id": 1077,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following is NOT included in the Fundamental Duties?",
+      "options": [
+        "Preserve the sovereignty of India",
+        "Uphold Constitution and law",
+        "Provide free education to all children",
+        "Defend the country"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Providing free education is a DPSP; it is not listed as an individual citizen's Fundamental Duty."
+    },
+    {
+      "id": 1078,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Principle of Natural Justice' in administrative law includes:",
+      "options": [
+        "Audi Alteram Partem (hear the other side)",
+        "Nemo Judex in Causa Sua (no one is judge in own cause)",
+        "Both of the above",
+        "Neither of the above"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Natural Justice includes fair hearing (Audi Alteram Partem) and no bias (Nemo Judex)."
+    },
+    {
+      "id": 1079,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which amendment introduced 'Panchayati Raj' institutions in the Constitution?",
+      "options": [
+        "72nd Amendment",
+        "73rd Amendment",
+        "74th Amendment",
+        "75th Amendment"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "The 73rd Amendment (1992) introduced Panchayati Raj institutions."
+    },
+    {
+      "id": 1080,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Right to Information' under RTI Act can be sought by:",
+      "options": [
+        "Only Indian citizens",
+        "Any person including foreigner",
+        "Only taxpayers",
+        "Only registered voters"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "The RTI Act 2005 allows 'any person' to seek information."
+    },
+    {
+      "id": 1081,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following correctly describes 'Impeachment'?",
+      "options": [
+        "It is removal from office",
+        "It is formal charge by legislature",
+        "Impeachment is the charge, not the removal",
+        "Only the President can be impeached"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "explanation": "Impeachment is the formal charge/accusation; removal follows conviction."
+    },
+    {
+      "id": 1082,
+      "year": 2023,
+      "type": "standard",
+      "text": "The concept of 'Supremacy of Constitution' means:",
+      "options": [
+        "Constitution is highest law of the land",
+        "No law can be contrary to Constitution",
+        "All powers derive from Constitution",
+        "All of the above"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "Constitutional Supremacy means it is the highest law and no other law can contradict it."
+    },
+    {
+      "id": 1083,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following is a 'Private Member's Bill'?",
+      "options": [
+        "Bill introduced by a private company",
+        "Bill introduced by a member who is not a minister",
+        "Bill that affects only private citizens",
+        "Bill that is kept confidential"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "A Private Member's Bill is introduced by an MP who is not a minister."
+    },
+    {
+      "id": 1084,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Doctrine of Repugnancy' in Indian federalism means:",
+      "options": [
+        "Central law is always superior to state law",
+        "State law is independent of central law",
+        "When concurrent subject laws conflict, Union law prevails",
+        "Laws must always be identical in all states"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "explanation": "Repugnancy means in case of conflict on concurrent subjects, Union law prevails (Art 254)."
+    },
+    {
+      "id": 1085,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following is the correct definition of 'Ultra Vires'?",
+      "options": [
+        "Within the powers",
+        "Beyond the powers; exceeding constitutional/legal authority",
+        "According to law",
+        "Approved by authorities"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Ultra Vires means 'beyond the powers' or exceeding authority."
+    },
+    {
+      "id": 1086,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Question Hour' in Parliament is designed to:",
+      "options": [
+        "Discuss international questions",
+        "Hold executive accountable through questioning",
+        "Solve mathematical questions",
+        "Question judges about their decisions"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Question Hour holds the executive accountable by allowing MPs to question ministers."
+    },
+    {
+      "id": 1087,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following correctly describes the 'Tenth Schedule'?",
+      "options": [
+        "It deals with Union and State relations",
+        "It deals with Panchayati Raj",
+        "It deals with anti-defection law",
+        "It deals with elections"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Tenth Schedule (52nd Amendment) contains the anti-defection law."
+    },
+    {
+      "id": 1088,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Proviso' in a constitutional article means:",
+      "options": [
+        "A temporary provision",
+        "An exception or qualification to a rule",
+        "A provision that can be repealed",
+        "A provision requiring state approval"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "A Proviso is a clause that provides an exception or qualification to the main provision."
+    },
+    {
+      "id": 1089,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following is NOT a criterion for disqualification under the anti-defection law?",
+      "options": [
+        "Voluntarily giving up membership",
+        "Voting against party whip",
+        "Abstaining from voting against party decision",
+        "Criticizing party policies"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "explanation": "Criticizing party policies is part of free speech and not grounds for disqualification."
+    },
+    {
+      "id": 1090,
+      "year": 2021,
+      "type": "standard",
+      "text": "The concept of 'Quorum' in Parliament means:",
+      "options": [
+        "Number of days Parliament sits",
+        "Minimum number of members required for valid proceedings",
+        "Maximum capacity of the House",
+        "Number of committees in Parliament"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Quorum is the minimum number of members (1/10th) required for valid proceedings."
+    },
+    {
+      "id": 1091,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which article deals with the appointment of the Attorney General of India?",
+      "options": [
+        "Article 74",
+        "Article 76",
+        "Article 78",
+        "Article 82"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Article 76 provides for the appointment of the Attorney General of India."
+    },
+    {
+      "id": 1092,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Lame Duck' period in the context of government means:",
+      "options": [
+        "When government is too weak to function",
+        "Period after election defeat but before new government takes office",
+        "Period when government has lost majority support",
+        "Period when President is hospitalized"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Lame Duck period is the time between election defeat and the new government assuming office."
+    },
+    {
+      "id": 1093,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is a 'Justiciable' right?",
+      "options": [
+        "Right to livelihood (DPSP)",
+        "Right to free education (DPSP)",
+        "Right to Education (Fundamental Right)",
+        "Right to work (DPSP)"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Right to Education (Article 21-A) is a Fundamental Right and thus justiciable."
+    },
+    {
+      "id": 1094,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Swadeshi' principle in DPSP aims to promote:",
+      "options": [
+        "Foreign trade",
+        "Self-reliance and local production",
+        "Government monopoly",
+        "Exclusion of foreign goods"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "DPSP promotes policies encouraging domestic production and self-reliance (Swadeshi spirit)."
+    },
+    {
+      "id": 1095,
+      "year": 2022,
+      "type": "standard",
+      "text": "Which of the following amendments is related to 'Reservations for Other Backward Classes'?",
+      "options": [
+        "77th Amendment",
+        "85th Amendment",
+        "103rd Amendment",
+        "106th Amendment"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "The 103rd Amendment (2019) provided for EWS reservation, modifying Articles 15 & 16."
+    },
+    {
+      "id": 1096,
+      "year": 2021,
+      "type": "standard",
+      "text": "The concept of 'Parity of reasoning' in constitutional interpretation means:",
+      "options": [
+        "All reasoning must be identical",
+        "Similar facts should receive similar treatment",
+        "Reasoning must be written in simple language",
+        "Court reasoning must match government reasoning"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Parity of Reasoning ensures consistency by treating similar facts similarly."
+    },
+    {
+      "id": 1097,
+      "year": 2020,
+      "type": "standard",
+      "text": "Which of the following is the correct composition of the Union Public Service Commission?",
+      "options": [
+        "Chairman and 10 members",
+        "Chairman and 11 members",
+        "Chairman and 5 members",
+        "Only a Chairman"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "UPSC comprises a Chairman and 10 members (Article 316)."
+    },
+    {
+      "id": 1098,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Doctrine of Necessities' in constitutional law allows:",
+      "options": [
+        "Government to ignore constitutional provisions in emergencies",
+        "Government to take necessary action in crisis without pre-existing law",
+        "Suspension of fundamental rights",
+        "Abolition of constitutional institutions"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Doctrine of Necessities permits necessary emergency actions for state survival without prior legislative authority."
+    },
+    {
+      "id": 1099,
+      "year": 2024,
+      "type": "standard",
+      "text": "Which of the following is a feature of the Indian judicial system that ensures independence?",
+      "options": [
+        "Judges are elected by public",
+        "Fixed tenure of judges",
+        "High salaries for judges",
+        "Judges are appointed by politicians"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Fixed tenure is a key constitutional guarantee for judicial independence."
+    },
+    {
+      "id": 1100,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Positive Discrimination' allowed under the Constitution means:",
+      "options": [
+        "All discrimination is allowed if justified",
+        "Discrimination against privileged groups to help disadvantaged groups",
+        "No discrimination is ever allowed",
+        "Only government can discriminate"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Positive Discrimination (affirmative action) helps disadvantaged groups to achieve substantive equality."
+    }
+  ]
+}
+
