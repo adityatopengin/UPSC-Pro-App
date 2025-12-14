@@ -1,0 +1,510 @@
+{
+  "subject": "Modern India",
+  "totalQuestions": 50,
+  "difficulty": "mixed",
+  "period": "1757-1947",
+  "source": "UPSC CSE Prelims (2013-2024)",
+  "lastUpdated": "2025-01-15",
+  "questions": [
+    {
+      "id": 2001,
+      "year": 2024,
+      "type": "standard",
+      "text": "The Battle of Plassey (1757) was fought between:",
+      "options": ["Robert Clive and Siraj-ud-Daulah", "Cornwallis and Tipu Sultan", "Wellesley and Osman Ali Khan", "Warren Hastings and Mir Jafar"],
+      "correct": 0,
+      "difficulty": "easy",
+      "explanation": "The Battle of Plassey established British dominance in India when Robert Clive defeated Siraj-ud-Daulah."
+    },
+    {
+      "id": 2002,
+      "year": 2023,
+      "type": "standard",
+      "text": "Who among the following was the first Governor-General of India?",
+      "options": ["Robert Clive", "Warren Hastings", "Lord Cornwallis", "Lord Wellesley"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Warren Hastings (1772-1785) was the first Governor-General of India."
+    },
+    {
+      "id": 2003,
+      "year": 2022,
+      "type": "standard",
+      "text": "The Regulating Act of 1773 was passed by the British Parliament to:",
+      "options": ["Grant Indian independence", "Establish a Supreme Court in Calcutta", "Regulate East India Company activities in India", "Abolish the East India Company"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "The Regulating Act of 1773 was the first major legislation to regulate East India Company's administration."
+    },
+    {
+      "id": 2004,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Permanent Settlement' of 1793 was introduced in Bengal by:",
+      "options": ["Robert Clive", "Warren Hastings", "Lord Cornwallis", "Lord Wellesley"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Lord Cornwallis introduced the Permanent Settlement in Bengal (1793)."
+    },
+    {
+      "id": 2005,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who was the leader of the Revolt of 1857 in Lucknow?",
+      "options": ["Kunwar Singh", "Begum Hazrat Mahal", "Mangal Pandey", "Nana Sahib"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Begum Hazrat Mahal led the Revolt of 1857 in Lucknow."
+    },
+    {
+      "id": 2006,
+      "year": 2019,
+      "type": "standard",
+      "text": "The 'Doctrine of Lapse' was introduced by which Governor-General?",
+      "options": ["Lord Hastings", "Lord Dalhousie", "Lord Canning", "Lord Ripon"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Lord Dalhousie introduced the Doctrine of Lapse to annex territories without natural heirs."
+    },
+    {
+      "id": 2007,
+      "year": 2024,
+      "type": "standard",
+      "text": "The Indian National Congress was founded in:",
+      "options": ["1882", "1885", "1888", "1891"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "The Indian National Congress was founded on December 28, 1885, by A.O. Hume."
+    },
+    {
+      "id": 2008,
+      "year": 2023,
+      "type": "standard",
+      "text": "Who was the first President of the Indian National Congress?",
+      "options": ["Dadabhai Naoroji", "Surendranath Banerjea", "Womesh Chandra Banerjea", "Keshab Chandra Sen"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Womesh Chandra Banerjea was the first President of Indian National Congress (1885)."
+    },
+    {
+      "id": 2009,
+      "year": 2022,
+      "type": "standard",
+      "text": "The Swadeshi Movement gained momentum after:",
+      "options": ["Battle of Plassey", "Partition of Bengal (1905)", "1857 Revolt", "Founding of Congress"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Partition of Bengal (1905) by Lord Curzon sparked the Swadeshi Movement."
+    },
+    {
+      "id": 2010,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Home Rule Movement' in India was initiated by:",
+      "options": ["Gopal Krishna Gokhale", "Annie Besant", "Bal Gangadhar Tilak", "Both B and C"],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "The Home Rule Movement was initiated independently by both Annie Besant and Bal Gangadhar Tilak."
+    },
+    {
+      "id": 2011,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who founded the 'Brahmo Samaj'?",
+      "options": ["Sri Ramakrishna Paramahamsa", "Raja Ram Mohan Roy", "Dayanand Saraswati", "Keshab Chandra Sen"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Raja Ram Mohan Roy founded the Brahmo Samaj in 1828."
+    },
+    {
+      "id": 2012,
+      "year": 2019,
+      "type": "standard",
+      "text": "The Young Bengal Movement was associated with:",
+      "options": ["Henry Derozio", "David Hare", "Alexander Duff", "William Carey"],
+      "correct": 0,
+      "difficulty": "hard",
+      "explanation": "Henry Derozio led the Young Bengal Movement (1820s-1830s) promoting rationalism."
+    },
+    {
+      "id": 2013,
+      "year": 2024,
+      "type": "standard",
+      "text": "The Cripps Mission came to India in:",
+      "options": ["1940", "1941", "1942", "1943"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Sir Stafford Cripps came to India in March 1942 offering dominion status."
+    },
+    {
+      "id": 2014,
+      "year": 2023,
+      "type": "standard",
+      "text": "Who among the following was the founder of the 'Theosophical Society'?",
+      "options": ["Annie Besant", "Helena Blavatsky", "Jiddu Krishnamurti", "Leadbeater"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Helena Blavatsky founded the Theosophical Society in 1875."
+    },
+    {
+      "id": 2015,
+      "year": 2022,
+      "type": "standard",
+      "text": "The Vernacular Press Act was passed in:",
+      "options": ["1878", "1882", "1885", "1891"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "The Vernacular Press Act (1878) was enacted under Lord Lytton."
+    },
+    {
+      "id": 2016,
+      "year": 2021,
+      "type": "standard",
+      "text": "The Civil Disobedience Movement was launched by Gandhi in:",
+      "options": ["1920", "1925", "1930", "1935"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Civil Disobedience Movement was launched on March 12, 1930, with the Salt March."
+    },
+    {
+      "id": 2017,
+      "year": 2020,
+      "type": "standard",
+      "text": "The Non-Cooperation Movement was launched in:",
+      "options": ["1919", "1920", "1921", "1922"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Non-Cooperation Movement was launched on September 13, 1920."
+    },
+    {
+      "id": 2018,
+      "year": 2019,
+      "type": "standard",
+      "text": "Who founded the 'Indian Home Rule Society' in London?",
+      "options": ["Dadabhai Naoroji", "Shyamji Krishna Varma", "V.D. Savarkar", "Lala Lajpat Rai"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Shyamji Krishna Varma founded the Indian Home Rule Society in London (1905)."
+    },
+    {
+      "id": 2019,
+      "year": 2024,
+      "type": "standard",
+      "text": "The Jallianwala Bagh massacre occurred in:",
+      "options": ["Delhi", "Lucknow", "Amritsar", "Lahore"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Jallianwala Bagh massacre occurred in Amritsar on April 13, 1919."
+    },
+    {
+      "id": 2020,
+      "year": 2023,
+      "type": "standard",
+      "text": "The Khilafat Movement was initiated to:",
+      "options": ["Support the Ottoman Caliphate", "Establish Islamic rule in India", "Fight British imperialism", "Secure Muslim political rights"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "The Khilafat Movement was initiated to protect the Ottoman Caliphate after World War I."
+    },
+    {
+      "id": 2021,
+      "year": 2022,
+      "type": "standard",
+      "text": "Who is known as the 'Father of the Indian National Army'?",
+      "options": ["Bhagat Singh", "Subhas Chandra Bose", "Rajendra Prasad", "Sardar Patel"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Subhas Chandra Bose reorganized the INA to fight for Indian independence."
+    },
+    {
+      "id": 2022,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Quit India Movement' was launched in:",
+      "options": ["1940", "1941", "1942", "1943"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Quit India Movement was launched on August 9, 1942."
+    },
+    {
+      "id": 2023,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who among the following was NOT part of the 'Triumvirate' of modern Indian Renaissance?",
+      "options": ["Ramakrishna Paramahamsa", "Swami Vivekananda", "Sri Aurobindo", "Raja Ram Mohan Roy"],
+      "correct": 3,
+      "difficulty": "hard",
+      "explanation": "Raja Ram Mohan Roy was an earlier reformer; the Triumvirate typically refers to later spiritual figures."
+    },
+    {
+      "id": 2024,
+      "year": 2019,
+      "type": "standard",
+      "text": "The Congress-Khilafat Alliance was primarily between:",
+      "options": ["Hindus and Sikhs", "Hindus and Muslims", "Congress and government", "India and Ottoman Empire"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Congress-Khilafat Alliance represented Hindu-Muslim cooperation."
+    },
+    {
+      "id": 2025,
+      "year": 2024,
+      "type": "standard",
+      "text": "Who authored 'Anandmath' which became the inspiration for 'Vande Mataram'?",
+      "options": ["Bankimchandra Chatterjee", "Dayanand Saraswati", "Keshab Chandra Sen", "Ishwar Chandra Vidyasagar"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Bankimchandra Chatterjee authored 'Anandmath' (1882) containing 'Vande Mataram'."
+    },
+    {
+      "id": 2026,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Drain of Wealth' theory was propounded by:",
+      "options": ["Raja Ram Mohan Roy", "Dadabhai Naoroji", "Surendranath Banerjea", "Gopal Krishna Gokhale"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Dadabhai Naoroji propounded the 'Drain of Wealth' theory in 'Poverty and Un-British Rule in India'."
+    },
+    {
+      "id": 2027,
+      "year": 2022,
+      "type": "standard",
+      "text": "Who is known as the 'Lion of Punjab'?",
+      "options": ["Khudiram Bose", "Lala Lajpat Rai", "Bhagat Singh", "Udham Singh"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Lala Lajpat Rai is known as the 'Lion of Punjab' (Sher-e-Punjab)."
+    },
+    {
+      "id": 2028,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Ryotwari System' was introduced in:",
+      "options": ["Bengal", "Bombay Presidency", "Madras Presidency", "Punjab"],
+      "correct": 2,
+      "difficulty": "hard",
+      "explanation": "The Ryotwari System was introduced in the Madras Presidency by Thomas Munro."
+    },
+    {
+      "id": 2029,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who founded the 'Servants of India Society'?",
+      "options": ["Gopal Krishna Gokhale", "Aurobindo Ghosh", "Ramakrishna Paramahamsa", "Keshab Chandra Sen"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Gopal Krishna Gokhale founded the Servants of India Society (1905)."
+    },
+    {
+      "id": 2030,
+      "year": 2019,
+      "type": "standard",
+      "text": "The Chauri Chaura incident occurred in:",
+      "options": ["1921", "1922", "1923", "1924"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Chauri Chaura incident occurred on February 5, 1922, leading to the withdrawal of Non-Cooperation."
+    },
+    {
+      "id": 2031,
+      "year": 2024,
+      "type": "standard",
+      "text": "Who organized the 'Kakori Conspiracy'?",
+      "options": ["Bhagat Singh", "Ram Prasad Bismil", "Chandrasekhar Azad", "Surya Sen"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Ram Prasad Bismil organized the Kakori Conspiracy (1925)."
+    },
+    {
+      "id": 2032,
+      "year": 2023,
+      "type": "standard",
+      "text": "The Simon Commission visited India in:",
+      "options": ["1927", "1928", "1929", "1930"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "The Simon Commission visited India in 1927-1928."
+    },
+    {
+      "id": 2033,
+      "year": 2022,
+      "type": "standard",
+      "text": "Who is known as 'Frontier Gandhi'?",
+      "options": ["Maulana Abul Kalam Azad", "Khan Abdul Ghaffar Khan", "Muhammad Ali Jinnah", "Tej Bahadur Sapru"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "Khan Abdul Ghaffar Khan is known as 'Frontier Gandhi'."
+    },
+    {
+      "id": 2034,
+      "year": 2021,
+      "type": "standard",
+      "text": "The Cabinet Mission Plan was presented in:",
+      "options": ["1945", "1946", "1947", "1948"],
+      "correct": 1,
+      "difficulty": "medium",
+      "explanation": "The Cabinet Mission Plan (1946) proposed a federal structure for India."
+    },
+    {
+      "id": 2035,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who presided over the Constituent Assembly that drafted the Indian Constitution?",
+      "options": ["Pandit Jawaharlal Nehru", "Dr. Rajendra Prasad", "Sardar Vallabhbhai Patel", "B.R. Ambedkar"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "Dr. Rajendra Prasad presided over the Constituent Assembly."
+    },
+    {
+      "id": 2036,
+      "year": 2019,
+      "type": "standard",
+      "text": "The Indian Constitution was adopted on:",
+      "options": ["August 15, 1947", "January 26, 1950", "November 26, 1949", "December 25, 1950"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Constitution was adopted on November 26, 1949, and came into effect on Jan 26, 1950."
+    },
+    {
+      "id": 2037,
+      "year": 2024,
+      "type": "standard",
+      "text": "Who among the following did NOT support the Partition of India?",
+      "options": ["Muhammad Ali Jinnah", "Sardar Vallabhbhai Patel", "Mahatma Gandhi", "Dr. Rajendra Prasad"],
+      "correct": 2,
+      "difficulty": "hard",
+      "explanation": "Mahatma Gandhi was deeply opposed to the Partition of India."
+    },
+    {
+      "id": 2038,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Namaste' gesture signifies:",
+      "options": ["The light in me greets the light in you", "Welcome to India", "Respect for elders", "Thankyou gesture"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Namaste spiritually signifies 'The light in me greets the light in you'."
+    },
+    {
+      "id": 2039,
+      "year": 2022,
+      "type": "standard",
+      "text": "Who introduced the concept of 'Satyagraha'?",
+      "options": ["Aurobindo Ghosh", "Ramakrishna Paramahamsa", "Mahatma Gandhi", "Jawaharlal Nehru"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "Mahatma Gandhi introduced the concept of Satyagraha (truth-force)."
+    },
+    {
+      "id": 2040,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Great Rebellion' of 1857 is also known as:",
+      "options": ["Revolt of 1857", "Indian Mutiny", "First War of Independence", "All of the above"],
+      "correct": 3,
+      "difficulty": "medium",
+      "explanation": "It is known by all these names depending on the historical perspective."
+    },
+    {
+      "id": 2041,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who started the 'Brahmo Samaj' after Raja Ram Mohan Roy?",
+      "options": ["Keshab Chandra Sen", "Debendranath Tagore", "Ramakrishna Paramahamsa", "Dayanand Saraswati"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Debendranath Tagore succeeded Raja Ram Mohan Roy in leading the Brahmo Samaj."
+    },
+    {
+      "id": 2042,
+      "year": 2019,
+      "type": "standard",
+      "text": "The Arya Samaj was founded by:",
+      "options": ["Dayanand Saraswati", "Keshab Chandra Sen", "Ramakrishna Paramahamsa", "Ishwar Chandra Vidyasagar"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Dayanand Saraswati founded the Arya Samaj in 1875."
+    },
+    {
+      "id": 2043,
+      "year": 2024,
+      "type": "standard",
+      "text": "Who was the first woman President of Indian National Congress?",
+      "options": ["Sarojini Naidu", "Annie Besant", "Aruna Asaf Ali", "Sucheta Kriplani"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Annie Besant was the first woman President of INC (1917)."
+    },
+    {
+      "id": 2044,
+      "year": 2023,
+      "type": "standard",
+      "text": "The 'Moderate' phase of the Indian National Congress lasted till:",
+      "options": ["1905", "1907", "1909", "1911"],
+      "correct": 0,
+      "difficulty": "hard",
+      "explanation": "The Moderate phase lasted until 1905, ending with the Partition of Bengal."
+    },
+    {
+      "id": 2045,
+      "year": 2022,
+      "type": "standard",
+      "text": "Who is known for the concept of 'Two-Nation Theory'?",
+      "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Muhammad Ali Jinnah", "B.R. Ambedkar"],
+      "correct": 2,
+      "difficulty": "medium",
+      "explanation": "Muhammad Ali Jinnah propounded the Two-Nation Theory."
+    },
+    {
+      "id": 2046,
+      "year": 2021,
+      "type": "standard",
+      "text": "The 'Sepoy Mutiny' began at:",
+      "options": ["Delhi", "Lucknow", "Meerut", "Kanpur"],
+      "correct": 2,
+      "difficulty": "easy",
+      "explanation": "The Sepoy Mutiny began at Meerut on May 10, 1857."
+    },
+    {
+      "id": 2047,
+      "year": 2020,
+      "type": "standard",
+      "text": "Who was the first editor of 'The Hindu' newspaper?",
+      "options": ["Surendranath Banerjea", "G. Subramania Iyer", "Keshab Chandra Sen", "Bal Gangadhar Tilak"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "G. Subramania Iyer founded and was the first editor of 'The Hindu'."
+    },
+    {
+      "id": 2048,
+      "year": 2019,
+      "type": "standard",
+      "text": "Rabindranath Tagore renounced his knighthood in protest against:",
+      "options": ["Jallianwala Bagh massacre", "Partition of Bengal", "Non-Cooperation Movement", "1857 Revolt"],
+      "correct": 0,
+      "difficulty": "medium",
+      "explanation": "Tagore renounced his knighthood after the Jallianwala Bagh massacre (1919)."
+    },
+    {
+      "id": 2049,
+      "year": 2024,
+      "type": "standard",
+      "text": "Who was the leader of the Moplah Rebellion?",
+      "options": ["Kunwar Singh", "Ali Musaliar", "Syed Barkatullah", "Khwaja Hasan Nizami"],
+      "correct": 1,
+      "difficulty": "hard",
+      "explanation": "Ali Musaliar led the Moplah Rebellion (1921) in Kerala."
+    },
+    {
+      "id": 2050,
+      "year": 2023,
+      "type": "standard",
+      "text": "India became independent on:",
+      "options": ["January 26, 1947", "August 15, 1947", "November 26, 1949", "January 26, 1950"],
+      "correct": 1,
+      "difficulty": "easy",
+      "explanation": "India became independent on August 15, 1947."
+    }
+  ]
+}
