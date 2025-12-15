@@ -1,6 +1,6 @@
 /* ============================================
    UPSC Pro - Modern Design System
-   Final Production Version (iOS Style)
+   Final Production Version (Ultra-Premium Glass)
    ============================================ */
 
 /* Import Font: Plus Jakarta Sans */
@@ -98,57 +98,86 @@ main {
     padding-bottom: 9rem; 
 }
 
-/* 3. MODERN FLOATING NAVIGATION (iPhone Style) */
+/* 3. ULTRA-PREMIUM GLASS NAVIGATION */
 .floating-nav {
     position: fixed;
-    bottom: 2rem; /* Floats above the bottom edge */
+    bottom: 2rem;
     left: 50%;
-    transform: translate(-50%, 0); /* Center horizontally */
-    width: 90%;
-    max-width: 400px; /* Keeps it sleek on desktop */
+    transform: translate(-50%, 0);
+    width: 85%; /* Slightly narrower for a tighter, premium look */
+    max-width: 380px; 
     z-index: 50;
     
-    /* THE iPHONE GLASS EFFECT */
-    /* Very translucent white background */
-    background: rgba(255, 255, 255, 0.65); 
-    /* Strong blur + Saturation boost so colors "pop" through */
-    backdrop-filter: blur(25px) saturate(200%);
-    -webkit-backdrop-filter: blur(25px) saturate(200%); /* For Safari/iOS */
+    /* 1. LIGHTING GRADIENT: Simulates light hitting from top-left */
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.7) 0%, 
+        rgba(255, 255, 255, 0.4) 100%
+    );
     
-    /* Subtle border defining edges */
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* 2. OPTICAL BLUR: High saturation makes colors behind it vivid */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     
-    /* Layered soft shadows for depth */
+    /* 3. 3D BORDER: Brighter on top/left, subtle on bottom/right */
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    
+    /* 4. DEPTH SHADOW: Soft, colored shadow + inner glow */
     box-shadow: 
-        0 8px 32px 0 rgba(31, 38, 135, 0.15),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+        0 15px 35px -5px rgba(0, 0, 0, 0.1), /* Ambient Shadow */
+        0 5px 15px 0px rgba(0, 0, 0, 0.05),  /* Direct Shadow */
+        inset 0 1px 0 rgba(255, 255, 255, 0.5); /* Inner Highlight */
         
-    border-radius: 3rem; /* Pill shape */
-    padding: 0.75rem 1.5rem;
+    border-radius: 3.5rem; /* Extra rounded pill shape */
+    padding: 0.75rem 1.75rem;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    /* Apple-style snappy spring transition */
-    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s ease-out;
+    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s;
 }
 
-/* DARK MODE GLASS EFFECT */
+/* DARK MODE REFINEMENT: Smoked Glass */
 [data-theme="dark"] .floating-nav {
-    background: rgba(15, 23, 42, 0.70); /* Dark slate translucent */
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(
+        135deg, 
+        rgba(30, 41, 59, 0.8) 0%, 
+        rgba(15, 23, 42, 0.6) 100%
+    );
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 
-        0 8px 32px 0 rgba(0, 0, 0, 0.3),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        0 15px 35px -5px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 /* State: Hidden (Slides down off-screen) */
 .nav-hidden {
-    /* Move down by 180% to hide completely */
     transform: translate(-50%, 180%) !important; 
     opacity: 0;
-    pointer-events: none; /* Prevent clicks when hidden */
+    pointer-events: none;
+}
+
+/* Navigation Icons Polish */
+.floating-nav button {
+    position: relative;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.floating-nav button:hover {
+    opacity: 1;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.floating-nav button:active {
+    transform: scale(0.9); /* Click press effect */
 }
 
 /* 4. TYPOGRAPHY */
@@ -221,3 +250,4 @@ a {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
+
