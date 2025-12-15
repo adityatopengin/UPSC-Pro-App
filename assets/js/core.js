@@ -1,8 +1,26 @@
 /**
  * core.js
- * Shared logic: scoring, time, config, Mistake Bank helpers
+ * Shared logic: Theme, scoring, time, config, Mistake Bank helpers
  * Final Production Version
  */
+
+/* =========================================
+   1. THEME LOADER (Must run first)
+   ========================================= */
+(function initTheme() {
+    const savedTheme = localStorage.getItem('upsc_theme');
+    
+    // Check local storage OR system preference
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+})();
+
+/* =========================================
+   2. QUIZ LOGIC
+   ========================================= */
 
 /**
  * Calculate quiz score with negative marking
@@ -21,7 +39,7 @@ function calculateScore(quiz, answers, marksPerCorrect = 2, negativeMark = 0.66)
         }
     });
     
-    // PRODUCTION FIX: Allow negative scores (removed Math.max(0...))
+    // Allow negative scores
     const rawScore = correct * marksPerCorrect - wrong * negativeMark;
     const score = parseFloat(rawScore.toFixed(2));
     
@@ -108,7 +126,7 @@ function saveMistakes(mistakes) {
         }
     });
     
-    // PRODUCTION FIX: Cap at 100 mistakes to prevent storage overflow
+    // Cap at 100 mistakes to prevent storage overflow
     if (savedMistakes.length > 100) {
         savedMistakes = savedMistakes.slice(-100);
     }
@@ -126,4 +144,3 @@ function estimateTime(questionCount, paper = 'gs1') {
     const secondsPerQ = paper === 'gs1' ? 72 : 90;
     return Math.round((questionCount * secondsPerQ) / 60);
 }
-
