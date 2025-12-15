@@ -1,6 +1,6 @@
 /* ============================================
    UPSC Pro - Modern Design System
-   Final Production Version
+   Final Production Version (Mobile Optimized)
    ============================================ */
 
 /* Import Font: Plus Jakarta Sans */
@@ -67,16 +67,17 @@
     --color-white: #1e293b; 
 }
 
-/* 2. BASE STYLES */
+/* 2. BASE STYLES & RESETS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* MOBILE FIX 1: Use Dynamic Viewport Height (dvh) */
 html {
     scroll-behavior: smooth;
-    height: 100%;
+    height: 100dvh; /* Ignores browser bars in Private Mode */
 }
 
 body {
@@ -87,7 +88,21 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.5;
-    height: 100%;
+    height: 100dvh; /* Forces app to stay within visible screen */
+    overflow: hidden; /* Prevents body scroll, relies on main scroll */
+}
+
+/* MOBILE FIX 2: Prevent Content from hiding behind Bottom Nav */
+main {
+    /* 6rem base padding + extra space for iPhone Home Bar */
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom)); 
+}
+
+/* MOBILE FIX 3: Safe Area for Bottom Nav */
+nav.fixed.bottom-0 {
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(4rem + env(safe-area-inset-bottom)); /* 4rem is the standard h-16 height */
+    z-index: 50;
 }
 
 /* 3. TYPOGRAPHY */
