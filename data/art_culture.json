@@ -1256,8 +1256,8 @@
     "subtopic": "Imperial Edicts",
     "difficulty": "Moderate",
     "question_type": "MCQ_single",
-    "question_text": "Who among the following rulers advised his subjects through this inscription? "Whosoever praises his religious sect or blames other sects out of excessive devotion to his own sect, with the view of glorifying his own sect, he rather injures his own sect very severely."",
-    "options": [
+    "question_text": "Who among the following rulers advised his subjects through this inscription? \"Whosoever praises his religious sect or blames other sects out of excessive devotion to his own sect, with the view of glorifying his own sect, he rather injures his own sect very severely.\"",
+      "options": [
       "Ashoka",
       "Samudragupta",
       "Harshavardhana",
