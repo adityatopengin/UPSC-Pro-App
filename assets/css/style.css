@@ -1,6 +1,6 @@
 /* ============================================
    UPSC Pro - Modern Design System
-   Rainbow / Holographic Edition (Fixed Contrast) 🌈
+   Final Fixed Version (Dark Footer + Header Fix)
    ============================================ */
 
 /* Import Font: Plus Jakarta Sans */
@@ -72,7 +72,7 @@ body {
 
 main { padding-bottom: 9rem; }
 
-/* 3. GLASS NAVIGATION */
+/* 3. GLASS NAVIGATION (FIXED FOOTER) */
 .floating-nav {
     position: fixed;
     bottom: 2rem;
@@ -96,9 +96,10 @@ main { padding-bottom: 9rem; }
     transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s;
 }
 
+/* FIX 1: Force Dark Background for Footer */
 [data-theme="dark"] .floating-nav {
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.6) !important; /* Forces Dark Glass */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
 }
 
@@ -107,6 +108,10 @@ main { padding-bottom: 9rem; }
 .floating-nav button {
     position: relative; opacity: 0.7; transition: all 0.3s ease;
 }
+/* Ensure Nav Icons are White in Dark Mode */
+[data-theme="dark"] .floating-nav button { color: #e2e8f0 !important; }
+[data-theme="dark"] .floating-nav button:hover { color: #ffffff !important; }
+
 .floating-nav button:hover { opacity: 1; transform: translateY(-2px); }
 .floating-nav button:active { transform: scale(0.9); }
 
@@ -165,43 +170,44 @@ a { color: var(--color-blue-600); text-decoration: none; transition: color 0.2s;
     color: var(--color-text-primary) !important;
 }
 
+/* FIX 2: Force "Hello, Aspirant" (Headers) to be White */
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3,
+[data-theme="dark"] header div {
+    color: #ffffff !important;
+}
+
 [data-theme="dark"] .text-slate-600, 
 [data-theme="dark"] .text-slate-500 {
     color: var(--color-text-secondary) !important;
 }
 
-/* B. Fix Quiz Options (Image 1 Fix) */
-/* Force the option buttons to be dark translucent so white text pops */
+/* B. Fix Quiz Options */
 [data-theme="dark"] button.w-full.text-left, 
 [data-theme="dark"] .option-card {
-    background-color: rgba(30, 41, 59, 0.6) !important; /* Dark Smoke */
+    background-color: rgba(30, 41, 59, 0.6) !important; 
     border-color: rgba(255, 255, 255, 0.1) !important;
     color: white !important;
 }
 
-/* C. Fix Selection Cards (Image 3 Fix) */
-/* Force 'Test Mode' & 'Learning' cards to be dark in dark mode */
+/* C. Fix Selection Cards */
 [data-theme="dark"] .bg-white {
     background-color: rgba(30, 41, 59, 0.6) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
     color: white !important;
 }
 
-/* D. Preserve Blue Highlight for Active Cards */
+/* D. Preserve Blue Highlight */
 [data-theme="dark"] .border-blue-600 {
-    background-color: rgba(37, 99, 235, 0.2) !important; /* Subtle Blue Tint */
+    background-color: rgba(37, 99, 235, 0.2) !important;
     border-color: #3b82f6 !important;
 }
 
-/* E. Fix Yellow Warning Box (Bottom of Image 3) */
-/* Keep the text dark on yellow backgrounds even in dark mode */
+/* E. Fix Yellow Warning Box */
 [data-theme="dark"] .bg-yellow-50,
 [data-theme="dark"] .bg-amber-50 {
     background-color: rgba(251, 191, 36, 0.2) !important; 
-    color: #fbbf24 !important; /* Make text gold/yellow instead of invisible white */
-}
-[data-theme="dark"] .bg-yellow-50 .text-slate-800,
-[data-theme="dark"] .bg-amber-50 .text-slate-800 {
-     color: #fbbf24 !important;
+    color: #fbbf24 !important; 
 }
 
