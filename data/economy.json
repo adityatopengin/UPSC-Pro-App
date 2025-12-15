@@ -1,0 +1,12 @@
+[
+  {
+    "id": "placeholder_01",
+    "text": "This subject is currently being updated with new UPSC questions. Please check back soon!",
+    "options": ["Okay", "Go Back", "Check Polity", "Exit"],
+    "correct": 0,
+    "explanation": "Content for this section is under development.",
+    "subject": "System Update",
+    "type": "standard"
+  }
+]
+
