@@ -1,6 +1,6 @@
 /* ============================================
    UPSC Pro - Modern Design System
-   Final Production Version (Mobile Optimized)
+   Final Production Version (iOS Style)
    ============================================ */
 
 /* Import Font: Plus Jakarta Sans */
@@ -92,20 +92,66 @@ body {
     overflow: hidden; /* Prevents body scroll, relies on main scroll */
 }
 
-/* MOBILE FIX 2: Prevent Content from hiding behind Bottom Nav */
+/* MOBILE FIX 2: Prevent Content from hiding behind Floating Nav */
 main {
-    /* 6rem base padding + extra space for iPhone Home Bar */
-    padding-bottom: calc(6rem + env(safe-area-inset-bottom)); 
+    /* 9rem gives plenty of space for the floating dock + shadow */
+    padding-bottom: 9rem; 
 }
 
-/* MOBILE FIX 3: Safe Area for Bottom Nav */
-nav.fixed.bottom-0 {
-    padding-bottom: env(safe-area-inset-bottom);
-    height: calc(4rem + env(safe-area-inset-bottom)); /* 4rem is the standard h-16 height */
+/* 3. MODERN FLOATING NAVIGATION (iPhone Style) */
+.floating-nav {
+    position: fixed;
+    bottom: 2rem; /* Floats above the bottom edge */
+    left: 50%;
+    transform: translate(-50%, 0); /* Center horizontally */
+    width: 90%;
+    max-width: 400px; /* Keeps it sleek on desktop */
     z-index: 50;
+    
+    /* THE iPHONE GLASS EFFECT */
+    /* Very translucent white background */
+    background: rgba(255, 255, 255, 0.65); 
+    /* Strong blur + Saturation boost so colors "pop" through */
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%); /* For Safari/iOS */
+    
+    /* Subtle border defining edges */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    
+    /* Layered soft shadows for depth */
+    box-shadow: 
+        0 8px 32px 0 rgba(31, 38, 135, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+        
+    border-radius: 3rem; /* Pill shape */
+    padding: 0.75rem 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Apple-style snappy spring transition */
+    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s ease-out;
 }
 
-/* 3. TYPOGRAPHY */
+/* DARK MODE GLASS EFFECT */
+[data-theme="dark"] .floating-nav {
+    background: rgba(15, 23, 42, 0.70); /* Dark slate translucent */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+        0 8px 32px 0 rgba(0, 0, 0, 0.3),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* State: Hidden (Slides down off-screen) */
+.nav-hidden {
+    /* Move down by 180% to hide completely */
+    transform: translate(-50%, 180%) !important; 
+    opacity: 0;
+    pointer-events: none; /* Prevent clicks when hidden */
+}
+
+/* 4. TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
@@ -118,7 +164,7 @@ a {
     transition: color 0.2s;
 }
 
-/* 4. GLASS EFFECTS */
+/* 5. GLASS EFFECTS (General Cards) */
 .glass-card {
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(16px) saturate(180%);
@@ -133,7 +179,7 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 5. COMPONENTS */
+/* 6. COMPONENTS */
 .card {
     background: var(--color-white);
     border: 1px solid var(--color-border);
@@ -155,12 +201,12 @@ a {
 }
 .btn:active { transform: scale(0.96); }
 
-/* 6. UTILITIES */
+/* 7. UTILITIES */
 .hidden { display: none !important; }
 .block { display: block; }
 .flex { display: flex; }
 
-/* 7. ANIMATIONS */
+/* 8. ANIMATIONS */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
