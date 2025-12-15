@@ -1537,5 +1537,326 @@
     "notes": "Tests knowledge of Somnath Temple's religious significance and historical documentation",
     "linked_concepts": ["Somnath Temple", "Jyotirlinga", "Al-Biruni", "Gujarat", "Rajendra Prasad"],
     "created_at": "2025-12-15"
+  },
+
+  {
+    "id": "ARTCULTURE_2023_001",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "UNESCO World Heritage",
+    "subtopic": "Recent Additions",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following properties included in the World Heritage List released by UNESCO: 1. Munjal Vasundhara 2. Ramappa Temple and the sculptures of Kakatiyas in Telangana 3. Hotsprings of Khyargas Sum in Mongolia 4. Historic Towns of Stralsund and Wismar. How many of the above properties were included in 2023?",
+    "options": [
+      "Only one",
+      "Only two",
+      "Only three",
+      "All four"
+    ],
+    "correct_option_index": 2,
+    "correct_option_label": "C",
+    "explanation": "Only three properties (2, 3, and 4) were included in the UNESCO World Heritage List in 2023. The Ramappa Temple in Telangana, showcasing Kakatiya sculpture and architecture, was inscribed in 2023. The Khyargas Sum hot springs in Mongolia were added to the list. Historic Towns of Stralsund and Wismar in Germany were inscribed. Property 1 (Munjal Vasundhara) was not included in the 2023 World Heritage List. This question tests current awareness about recent UNESCO heritage designations, an important aspect of art and culture for UPSC aspirants.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 1
+    },
+    "tags": ["current_affairs", "UNESCO", "world_heritage"],
+    "notes": "Tests knowledge of recent UNESCO World Heritage designations. Requires awareness of 2023 additions",
+    "linked_concepts": ["UNESCO World Heritage", "Ramappa Temple", "Kakatiya Architecture", "World Heritage List", "Cultural Heritage"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2023_002",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "Religious Texts and Philosophy",
+    "subtopic": "Vedic and Buddhist Texts",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following statements: 1. Chandogya Upanishad is the oldest prose Upanishad. 2. Rigveda is the oldest sacred text of Hinduism. 3. Mahayana Buddhism was prevalent during the time of Ashoka. Which of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "2 and 3 only"
+    ],
+    "correct_option_index": 1,
+    "correct_option_label": "B",
+    "explanation": "Only statement 2 is correct. The Rigveda is indeed the oldest sacred text of Hinduism, composed around 1500-1200 BCE. Statement 1 is incorrect: The Chandogya Upanishad is not the oldest prose Upanishad; the Brihadaranyaka and Taittiriya Upanishads have claims to being among the earliest. Statement 3 is incorrect: Mahayana Buddhism emerged and developed after the time of Ashoka (3rd century BCE). Ashoka patronized early Buddhism, particularly forms closer to what would become Theravada Buddhism. Mahayana Buddhism became prominent later, during the Kushana period and afterwards, particularly in Central Asia and East Asia.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 2
+    },
+    "tags": ["static", "vedic_texts", "buddhism"],
+    "notes": "Tests chronological understanding of religious texts and Buddhist school development",
+    "linked_concepts": ["Rigveda", "Upanishads", "Ashoka", "Mahayana Buddhism", "Theravada Buddhism"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2023_003",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "Classical Paintings",
+    "subtopic": "Ancient Indian Murals",
+    "difficulty": "Easy",
+    "question_type": "MCQ_single",
+    "question_text": "The painting of Bodhisattva Padmapani is one of the most famous and oft-illustrated paintings at",
+    "options": [
+      "Ajanta",
+      "Badami",
+      "Bagh",
+      "Ellora"
+    ],
+    "correct_option_index": 0,
+    "correct_option_label": "A",
+    "explanation": "The famous painting of Bodhisattva Padmapani is located at Ajanta Caves in Maharashtra. This iconic painting, found in Cave 1 at Ajanta, depicts Padmapani (Avalokiteshvara) holding a lotus flower. The painting demonstrates the sophisticated artistic techniques of the 5th century CE, with exquisite color palette and expressive features. The Bodhisattva Padmapani is one of the most replicated and celebrated images of Ajanta murals, representing the peak of ancient Indian painting techniques. The painting exemplifies the Buddhist religious philosophy through art during the Gupta period.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 3
+    },
+    "tags": ["static", "ajanta_caves", "buddhist_art"],
+    "notes": "Tests knowledge of specific paintings and their locations at major archaeological sites",
+    "linked_concepts": ["Ajanta Caves", "Bodhisattva Padmapani", "Ancient Indian Murals", "Buddhist Art", "Gupta Period"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2023_004",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "Temple Architecture",
+    "subtopic": "Sculptural Traditions",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following statements about Indian temples: 1. The Gajapati rulers patronized the construction of the Jagannath Temple. 2. The Jagannath Temple has a fusion of Nagara and Dravida architectural styles. 3. The temple rituals include the daily worship cycle known as 'Chha Mahaprabhu'.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct_option_index": 0,
+    "correct_option_label": "A",
+    "explanation": "Statements 1 and 2 are correct. The Jagannath Temple in Puri was patronized by Gajapati rulers during the medieval period, and the temple indeed exhibits a fusion of Nagara (northern) and Dravida (southern) architectural styles, representing a synthesis of Indian architectural traditions. Statement 3 is incorrect: The daily temple rituals at Jagannath are known as the 'Chha Mahaprabhu' refers to six deities/aspects, but the primary worship cycles are typically called 'Sringara Upa', 'Madhyana Upa', and 'Sandhya Upa' (services). The statement about 'Chha Mahaprabhu' as a daily worship cycle is not accurate in standard temple terminology.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 4
+    },
+    "tags": ["static", "temple_architecture", "orissa"],
+    "notes": "Tests knowledge of specific temples and their architectural and ritualistic features",
+    "linked_concepts": ["Jagannath Temple", "Gajapati Rulers", "Nagara Architecture", "Dravida Architecture", "Temple Rituals"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2023_005",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "Archaeological Sites",
+    "subtopic": "Historical Significance",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following archaeological sites and what they are known for: 1. Hampi—Vijayanagara Empire's ruins and architecture 2. Konark—Sun Temple with unique chariot-shaped structure 3. Khajuraho—temples known for sculptural art depicting everyday life. Which of the pairs given above are correctly matched?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct_option_index": 3,
+    "correct_option_label": "D",
+    "explanation": "All three sites are correctly matched with their historical significance. Hampi is renowned for the architectural ruins and monuments of the Vijayanagara Empire. Konark in Odisha is famous for the magnificent Sun Temple (Surya Temple) built in the 13th century CE with a distinctive chariot-shaped structure and elaborate stone carving. Khajuraho temples in Madhya Pradesh are celebrated for their intricate sculptural art depicting various aspects of human life including erotic sculptures, daily activities, and religious themes. All three represent significant architectural and artistic achievements of medieval Indian kingdoms.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 5
+    },
+    "tags": ["static", "archaeological_sites", "medieval_architecture"],
+    "notes": "Tests knowledge of major archaeological sites and their distinctive features",
+    "linked_concepts": ["Hampi", "Konark", "Khajuraho", "Vijayanagara", "Medieval Architecture", "Sculpture"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2023_006",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "Classical Dance Forms",
+    "subtopic": "Terminology and Features",
+    "difficulty": "Easy",
+    "question_type": "MCQ_single",
+    "question_text": "Which one of the following is a specific term used in Kathakali dance to describe a particular pose or movement?",
+    "options": [
+      "Hastas",
+      "Cholkettu",
+      "Tandava",
+      "Mudras"
+    ],
+    "correct_option_index": 1,
+    "correct_option_label": "B",
+    "explanation": "Cholkettu is a specific term used in Kathakali dance representing geometric body postures and leg positions. While Hastas and Mudras refer to hand gestures (which are used in Kathakali), Cholkettu specifically refers to the characteristic static body positions and stances of Kathakali. Tandava refers to vigorous dance movements, particularly associated with Shiva's cosmic dance. Cholkettu represents the distinctive body angles and postural movements that are hallmarks of Kathakali's elaborate and stylized movement vocabulary.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 6
+    },
+    "tags": ["static", "classical_dance", "terminology"],
+    "notes": "Tests specific knowledge of Kathakali terminology and movement vocabulary",
+    "linked_concepts": ["Kathakali", "Dance Terminology", "Cholkettu", "Classical Dance", "Kerala Dance"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2023_007",
+    "year": 2023,
+    "subject": "Art and Culture",
+    "topic": "Historical Inscriptions",
+    "subtopic": "Ancient Edicts",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_single",
+    "question_text": "Which one of the following Ashoka's rock edicts specifically discusses the concept of Mahamattas (royal officials)?",
+    "options": [
+      "Rock Edict 3",
+      "Rock Edict 5",
+      "Rock Edict 6",
+      "Rock Edict 13"
+    ],
+    "correct_option_index": 1,
+    "correct_option_label": "B",
+    "explanation": "Rock Edict 5 of Ashoka specifically discusses the role and appointment of Mahamattas—senior royal officials responsible for implementing Ashoka's policies of Dhamma throughout the empire. The Rock Edict 5 describes how Ashoka appointed these officials to ensure proper governance and propagation of his ethical edicts across different regions. This edict provides insight into Ashoka's administrative structure and his emphasis on moral governance through appointed officials. Understanding Ashoka's edicts is crucial for comprehending Mauryan administration and Ashoka's dharma (Dhamma) policies.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2023,
+      "question_number": 7
+    },
+    "tags": ["static", "ashoka", "inscriptions"],
+    "notes": "Tests knowledge of specific Ashoka edicts and their content",
+    "linked_concepts": ["Ashoka Rock Edicts", "Mahamattas", "Dhamma", "Mauryan Administration", "Rock Edict 5"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2024_001",
+    "year": 2024,
+    "subject": "Art and Culture",
+    "topic": "Sanskrit Drama",
+    "subtopic": "Playwrights and Works",
+    "difficulty": "Easy",
+    "question_type": "MCQ_single",
+    "question_text": "Which one of the following plays is attributed to the Sanskrit playwright Bhasa?",
+    "options": [
+      "Pratijnayaugandharayana",
+      "Malvikaagnimitra",
+      "Vikramorvasiya",
+      "Uttararamacharita"
+    ],
+    "correct_option_index": 0,
+    "correct_option_label": "A",
+    "explanation": "Pratijnayaugandharayana is a play attributed to Bhasa. This comedy is one of Bhasa's thirteen known works and is considered an important example of Sanskrit drama. The play features complex plot developments and witty dialogue. Malvikaagnimitra is attributed to Kalidasa. Vikramorvasiya (Vikramorvashi) is also a work by Kalidasa. Uttararamacharita is attributed to Bhavabhuti. Bhasa is one of ancient India's greatest playwrights, and his works demonstrate sophisticated dramatic technique and literary skill from the early centuries CE.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2024,
+      "question_number": 1
+    },
+    "tags": ["static", "sanskrit_drama", "playwrights"],
+    "notes": "Tests knowledge of Sanskrit playwrights and their specific works",
+    "linked_concepts": ["Bhasa", "Sanskrit Drama", "Playwrights", "Classical Literature", "Sanskrit Theatre"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2024_002",
+    "year": 2024,
+    "subject": "Art and Culture",
+    "topic": "Tribal Communities and Culture",
+    "subtopic": "Traditional Art Forms",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following statements about Warli art: 1. Warli is a tribal art form practiced by the Warli tribe primarily in Maharashtra. 2. Warli paintings predominantly use geometric patterns and shapes. 3. Warli art primarily depicts animals and hunting scenes.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct_option_index": 0,
+    "correct_option_label": "A",
+    "explanation": "Statements 1 and 2 are correct. Warli art is indeed a tribal art form practiced by the Warli tribe in Maharashtra (and neighboring areas). The art is characterized by geometric patterns, circles, triangles, and lines depicting various aspects of daily life and nature. Statement 3 is incorrect: Warli art is not primarily focused on animals and hunting scenes. Instead, Warli paintings typically depict scenes from daily life, agriculture, celebrations, marriage ceremonies, and relationships between people and nature. The geometric abstraction and use of basic shapes distinguish Warli from naturalistic depictions. Warli has gained recognition as an important example of tribal art and UNESCO intangible cultural heritage.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2024,
+      "question_number": 2
+    },
+    "tags": ["static", "tribal_art", "warli"],
+    "notes": "Tests knowledge of tribal art forms and their distinctive characteristics",
+    "linked_concepts": ["Warli Art", "Tribal Communities", "Maharashtra", "Geometric Patterns", "Indigenous Art Forms"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2024_003",
+    "year": 2024,
+    "subject": "Art and Culture",
+    "topic": "Buddhist Philosophy",
+    "subtopic": "Core Concepts",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following statements about the Bodhisattva concept in Buddhism: 1. A Bodhisattva is one who has achieved enlightenment. 2. The Bodhisattva path emphasizes compassion and the delay of personal enlightenment to help others. 3. The concept of Bodhisattva is unique to Mahayana Buddhism.",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct_option_index": 2,
+    "correct_option_label": "C",
+    "explanation": "Statements 2 and 3 are correct. Statement 2: The Bodhisattva path, central to Mahayana Buddhism, emphasizes universal compassion (karuna) and the deliberate postponement of personal enlightenment to assist all sentient beings in achieving liberation. This represents a fundamental ethical and spiritual commitment. Statement 3: The Bodhisattva concept as a religious ideal is distinctive to Mahayana Buddhism; it is not central to Theravada Buddhism which emphasizes individual monastic enlightenment. Statement 1 is incorrect: A Bodhisattva is not one who has already achieved enlightenment; rather, a Bodhisattva is one who is on the path to enlightenment but has vowed to postpone final entry into nirvana to assist others. The term means 'enlightenment being' or 'awakening being'—one pursuing enlightenment with compassionate intention.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2024,
+      "question_number": 3
+    },
+    "tags": ["static", "buddhism", "philosophy"],
+    "notes": "Tests understanding of Bodhisattva concept and its significance in Mahayana Buddhism",
+    "linked_concepts": ["Bodhisattva Path", "Mahayana Buddhism", "Compassion", "Enlightenment", "Buddhist Philosophy"],
+    "created_at": "2025-12-15"
+  },
+  {
+    "id": "ARTCULTURE_2024_004",
+    "year": 2024,
+    "subject": "Art and Culture",
+    "topic": "Mughal Art and Architecture",
+    "subtopic": "Architectural Features",
+    "difficulty": "Moderate",
+    "question_type": "MCQ_multiple",
+    "question_text": "Consider the following statements about Mughal architecture: 1. The concept of Charbagh (four-fold garden) is a distinctive feature of Mughal landscape design. 2. Inlay work using semi-precious stones (pietra dura) is a characteristic feature of Mughal architecture. 3. Mughal architects exclusively used brick in construction rather than stone.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "correct_option_index": 0,
+    "correct_option_label": "A",
+    "explanation": "Statements 1 and 2 are correct. The Charbagh (four gardens divided by waterways) is indeed a distinctive feature of Mughal landscape design, seen in famous gardens and palace complexes like the Taj Mahal gardens. Inlay work with semi-precious stones (pietra dura)—decorative marble inlay work—is a hallmark of Mughal architecture, exemplified in the Taj Mahal. Statement 3 is incorrect: Mughal architects used both stone and brick, with a strong preference for marble and sandstone in monumental architecture, not exclusively brick. The use of marble in grand structures like the Taj Mahal is a defining characteristic of Mughal architecture during its prime period.",
+    "source": {
+      "exam": "UPSC_CSE_Prelims",
+      "paper": "GS1",
+      "year": 2024,
+      "question_number": 4
+    },
+    "tags": ["static", "mughal_architecture", "design_features"],
+    "notes": "Tests knowledge of distinctive features of Mughal architecture and design",
+    "linked_concepts": ["Mughal Architecture", "Charbagh", "Pietra Dura", "Taj Mahal", "Garden Design"],
+    "created_at": "2025-12-15"
   }
-    ]
+]
+    
