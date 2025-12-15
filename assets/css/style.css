@@ -1,6 +1,6 @@
 /* ============================================
    UPSC Pro - Modern Design System
-   Rainbow / Holographic Edition 🌈
+   Rainbow / Holographic Edition (Fixed Contrast) 🌈
    ============================================ */
 
 /* Import Font: Plus Jakarta Sans */
@@ -13,26 +13,24 @@
     --color-text-primary: #1e293b;   /* Slate 900 */
     --color-text-secondary: #475569; /* Slate 600 */
     --color-text-muted: #94a3b8;     /* Slate 400 */
-    --color-border: rgba(255, 255, 255, 0.6); /* Translucent borders for glass */
+    --color-border: rgba(255, 255, 255, 0.6); 
     
     /* Vibrant Rainbow Accents */
-    --color-blue-600: #6366f1; /* Indigo (More vibrant than standard blue) */
+    --color-blue-600: #6366f1; 
     --color-emerald-600: #10b981;
-    --color-red-500: #f43f5e; /* Rose */
+    --color-red-500: #f43f5e; 
     
-    /* Spacing & Fonts */
     --font-family: 'Plus Jakarta Sans', sans-serif;
     
-    /* Shadows */
     --shadow-sm: 0 2px 4px rgba(148, 163, 184, 0.1);
     --shadow-lg: 0 15px 30px rgba(148, 163, 184, 0.2);
 }
 
-/* Dark Mode Variables (Dark Aurora Theme) */
+/* Dark Mode Variables */
 [data-theme="dark"] {
     --color-text-primary: #f8fafc;
     --color-text-secondary: #cbd5e1;
-    --color-text-muted: #64748b;
+    --color-text-muted: #94a3b8;
     --color-border: rgba(255, 255, 255, 0.1);
     --color-white: #1e293b; 
     --color-blue-600: #818cf8;
@@ -52,37 +50,29 @@ body {
 
     /* LIGHT MODE: Pastel Rainbow Mesh */
     background-color: #fdfbfb;
-    background-image: 
-        radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, transparent 50%), 
-        radial-gradient(at 50% 0%, hsla(225,39%,30%,0) 0, transparent 50%), 
-        radial-gradient(at 100% 0%, hsla(339,49%,30%,0) 0, transparent 50%);
-        
-    /* The Magic Gradient Layer */
     background: 
-        radial-gradient(circle at 0% 0%, #ffdee9 0%, transparent 50%), /* Pink Top Left */
-        radial-gradient(circle at 100% 0%, #c6ea8d 0%, transparent 50%), /* Lime Top Right */
-        radial-gradient(circle at 100% 100%, #a18cd1 0%, transparent 50%), /* Purple Bot Right */
-        radial-gradient(circle at 0% 100%, #fad0c4 0%, transparent 50%); /* Peach Bot Left */
-        
+        radial-gradient(circle at 0% 0%, #ffdee9 0%, transparent 50%), 
+        radial-gradient(circle at 100% 0%, #c6ea8d 0%, transparent 50%), 
+        radial-gradient(circle at 100% 100%, #a18cd1 0%, transparent 50%), 
+        radial-gradient(circle at 0% 100%, #fad0c4 0%, transparent 50%);
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 
-/* DARK MODE: Dark Aurora Mesh */
+/* DARK MODE: Deep Aurora Mesh */
 [data-theme="dark"] body {
     background-color: #0f172a;
     background: 
-        radial-gradient(circle at 0% 0%, #312e81 0%, transparent 60%), /* Deep Indigo */
-        radial-gradient(circle at 100% 0%, #4c1d95 0%, transparent 60%), /* Deep Violet */
-        radial-gradient(circle at 100% 100%, #831843 0%, transparent 60%), /* Deep Rose */
-        radial-gradient(circle at 0% 100%, #064e3b 0%, transparent 60%); /* Deep Emerald */
+        radial-gradient(circle at 0% 0%, #312e81 0%, transparent 60%), 
+        radial-gradient(circle at 100% 0%, #4c1d95 0%, transparent 60%), 
+        radial-gradient(circle at 100% 100%, #831843 0%, transparent 60%), 
+        radial-gradient(circle at 0% 100%, #064e3b 0%, transparent 60%);
     background-attachment: fixed;
 }
 
-/* MOBILE FIX: Prevent Content from hiding */
 main { padding-bottom: 9rem; }
 
-/* 3. ULTRA-PREMIUM GLASS NAVIGATION */
+/* 3. GLASS NAVIGATION */
 .floating-nav {
     position: fixed;
     bottom: 2rem;
@@ -92,14 +82,12 @@ main { padding-bottom: 9rem; }
     max-width: 380px; 
     z-index: 50;
     
-    /* Crystal Clear Glass to show the Rainbow */
     background: rgba(255, 255, 255, 0.4); 
     backdrop-filter: blur(25px) saturate(180%);
     -webkit-backdrop-filter: blur(25px) saturate(180%);
     
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
-        
     border-radius: 3.5rem;
     padding: 0.75rem 1.75rem;
     display: flex;
@@ -122,13 +110,12 @@ main { padding-bottom: 9rem; }
 .floating-nav button:hover { opacity: 1; transform: translateY(-2px); }
 .floating-nav button:active { transform: scale(0.9); }
 
-/* 4. TYPOGRAPHY & LINKS */
+/* 4. TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
 a { color: var(--color-blue-600); text-decoration: none; transition: color 0.2s; }
 
-/* 5. GLASS CARDS (More Transparent for Rainbow Effect) */
+/* 5. GLASS CARDS */
 .glass-card {
-    /* More transparent white (0.6) to let colors shine */
     background: rgba(255, 255, 255, 0.6); 
     backdrop-filter: blur(20px) saturate(150%);
     -webkit-backdrop-filter: blur(20px) saturate(150%);
@@ -144,7 +131,7 @@ a { color: var(--color-blue-600); text-decoration: none; transition: color 0.2s;
 
 /* 6. COMPONENTS */
 .card {
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent cards */
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid var(--color-border);
     border-radius: 1rem;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,17 +153,55 @@ a { color: var(--color-blue-600); text-decoration: none; transition: color 0.2s;
 ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 
-/* 9. DARK MODE TEXT OVERRIDES */
-[data-theme="dark"] .text-slate-900, [data-theme="dark"] .text-slate-800, [data-theme="dark"] .text-slate-700,
-[data-theme="dark"] .text-gray-900, [data-theme="dark"] .text-gray-800, [data-theme="dark"] .text-gray-700 {
+/* =========================================
+   9. DARK MODE CONTRAST FIXES (CRITICAL)
+   ========================================= */
+
+/* A. Fix General Text Colors */
+[data-theme="dark"] .text-slate-900, 
+[data-theme="dark"] .text-slate-800, 
+[data-theme="dark"] .text-slate-700,
+[data-theme="dark"] .text-gray-900 {
     color: var(--color-text-primary) !important;
 }
-[data-theme="dark"] .text-slate-600, [data-theme="dark"] .text-slate-500,
-[data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-500 {
+
+[data-theme="dark"] .text-slate-600, 
+[data-theme="dark"] .text-slate-500 {
     color: var(--color-text-secondary) !important;
 }
+
+/* B. Fix Quiz Options (Image 1 Fix) */
+/* Force the option buttons to be dark translucent so white text pops */
+[data-theme="dark"] button.w-full.text-left, 
+[data-theme="dark"] .option-card {
+    background-color: rgba(30, 41, 59, 0.6) !important; /* Dark Smoke */
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+/* C. Fix Selection Cards (Image 3 Fix) */
+/* Force 'Test Mode' & 'Learning' cards to be dark in dark mode */
 [data-theme="dark"] .bg-white {
-    background-color: var(--color-white) !important;
-    border-color: var(--color-border) !important;
+    background-color: rgba(30, 41, 59, 0.6) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+/* D. Preserve Blue Highlight for Active Cards */
+[data-theme="dark"] .border-blue-600 {
+    background-color: rgba(37, 99, 235, 0.2) !important; /* Subtle Blue Tint */
+    border-color: #3b82f6 !important;
+}
+
+/* E. Fix Yellow Warning Box (Bottom of Image 3) */
+/* Keep the text dark on yellow backgrounds even in dark mode */
+[data-theme="dark"] .bg-yellow-50,
+[data-theme="dark"] .bg-amber-50 {
+    background-color: rgba(251, 191, 36, 0.2) !important; 
+    color: #fbbf24 !important; /* Make text gold/yellow instead of invisible white */
+}
+[data-theme="dark"] .bg-yellow-50 .text-slate-800,
+[data-theme="dark"] .bg-amber-50 .text-slate-800 {
+     color: #fbbf24 !important;
 }
 
