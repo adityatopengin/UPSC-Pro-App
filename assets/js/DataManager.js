@@ -1,7 +1,7 @@
 /**
  * DataManager.js
  * Data layer: local history, stats, Firebase sync
- * Final Production Version
+ * Final Production Version (Universal Adapter)
  */
 
 class DataManager {
@@ -32,24 +32,64 @@ class DataManager {
     }
 
     /**
-     * Fetch questions with Smart Parsing
+     * Fetch questions with Universal Adapter
+     * Handles Old Format, New Format, and Object/Array wrappers
      */
     async fetchQuestions(filename) {
         try {
             const response = await fetch(`./data/${filename}`);
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             
-            const data = await response.json();
-            
-            // PRODUCTION FIX: Handle both Array and Object formats
-            if (Array.isArray(data)) {
-                return data;
-            } else if (data.questions && Array.isArray(data.questions)) {
-                return data.questions;
+            const rawData = await response.json();
+            let rawQuestions = [];
+
+            // 1. Unwrap Data (Handle {questions: [...]} vs [...])
+            if (Array.isArray(rawData)) {
+                rawQuestions = rawData;
+            } else if (rawData.questions && Array.isArray(rawData.questions)) {
+                rawQuestions = rawData.questions;
             } else {
                 console.warn(`Invalid format in ${filename}`);
                 return [];
             }
+
+            // 2. ADAPTER: Normalize Data to App Standard
+            return rawQuestions.map(q => {
+                // Determine Correct Answer Index
+                let correctIdx = 0;
+                if (q.correct !== undefined) correctIdx = q.correct; // Old format
+                else if (q.correct_option_index !== undefined) correctIdx = q.correct_option_index; // New format
+
+                // Determine Question Type
+                let qType = 'standard';
+                if (q.type) qType = q.type; // Old format
+                else if (q.question_type) {
+                    // Map new types to old standard
+                    if (q.question_type === 'MCQ_multiple') qType = 'standard';
+                    // Add more mappings here if needed (e.g., 'Passage' -> 'passage')
+                }
+
+                return {
+                    // Essential Fields for UI
+                    id: q.id, // String or Number is fine
+                    text: q.text || q.question_text, // Handle both names
+                    options: q.options,
+                    correct: correctIdx,
+                    explanation: q.explanation,
+                    type: qType,
+                    
+                    // Rich Metadata (Pass through for display)
+                    subject: q.subject,
+                    topic: q.topic || 'General',
+                    year: q.year,
+                    difficulty: q.difficulty,
+                    
+                    // Image/Passage Support (Preserve if present)
+                    imgUrl: q.imgUrl || q.image_url,
+                    parentText: q.parentText || q.passage_text
+                };
+            });
+
         } catch (error) {
             console.warn(`Failed to load ${filename}:`, error);
             return [];
@@ -69,7 +109,6 @@ class DataManager {
         localStorage.setItem('upsc_history', JSON.stringify(history));
 
         if (this.mode === 'cloud' && typeof db !== 'undefined') {
-            // Cloud sync logic (placeholder for now)
             console.log('Result saved locally (Cloud sync ready)');
         }
         return true;
@@ -90,7 +129,7 @@ class DataManager {
         history.forEach(h => {
             totalQs += (h.total || 0);
             totalCorrect += (h.correct || 0);
-            totalTimeSeconds += (h.timeSpent || 0); // Ensure this is seconds
+            totalTimeSeconds += (h.timeSpent || 0);
 
             const acc = h.total ? Math.round((h.correct / h.total) * 100) : 0;
             accuracyHistory.push(acc);
@@ -101,7 +140,6 @@ class DataManager {
             subjects[sub].correct += (h.correct || 0);
         });
 
-        // Convert subject stats to percentage
         const subjectStats = {};
         for (const [key, val] of Object.entries(subjects)) {
             subjectStats[key] = {
@@ -114,7 +152,7 @@ class DataManager {
         return {
             totalQuestions: totalQs,
             accuracy: totalQs > 0 ? Math.round((totalCorrect / totalQs) * 100) : 0,
-            studyHours: Math.round(totalTimeSeconds / 60), // Return Minutes for display
+            studyHours: Math.round(totalTimeSeconds / 60),
             subjects: subjectStats,
             history: accuracyHistory.slice(-10)
         };
@@ -129,5 +167,5 @@ class DataManager {
     }
 }
 
-// Export singleton
 const appData = new DataManager();
+
